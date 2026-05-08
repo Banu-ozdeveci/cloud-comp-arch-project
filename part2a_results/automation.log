@@ -1,0 +1,940 @@
+[2026-05-08 17:50:45] ========================================
+[2026-05-08 17:50:45] Starting experiment: barnes + none
+[2026-05-08 17:50:45] ========================================
+[2026-05-08 17:50:45] Running baseline without interference.
+[2026-05-08 17:50:45] Starting PARSEC workload: barnes
+job.batch/parsec-barnes created
+[2026-05-08 17:50:50] Detected job: parsec-barnes
+[2026-05-08 17:50:50] Waiting for parsec-barnes to complete...
+job.batch/parsec-barnes condition met
+[2026-05-08 17:52:53] parsec-barnes completed successfully.
+[2026-05-08 17:52:53] Saving PARSEC output to part2a_results/barnes_none.txt
+[2026-05-08 17:52:53] Deleting PARSEC job: parsec-barnes
+job.batch "parsec-barnes" deleted from default namespace
+[2026-05-08 17:52:53] Finished experiment: barnes + none
+[2026-05-08 17:53:03] ========================================
+[2026-05-08 17:53:03] Starting experiment: barnes + cpu
+[2026-05-08 17:53:03] ========================================
+[2026-05-08 17:53:03] Starting ibench-cpu...
+pod/ibench-cpu created
+[2026-05-08 17:53:04] Waiting for ibench-cpu to be Ready...
+pod/ibench-cpu condition met
+[2026-05-08 17:53:05] ibench-cpu is Ready.
+[2026-05-08 17:53:15] Starting PARSEC workload: barnes
+job.batch/parsec-barnes created
+[2026-05-08 17:53:20] Detected job: parsec-barnes
+[2026-05-08 17:53:20] Waiting for parsec-barnes to complete...
+job.batch/parsec-barnes condition met
+[2026-05-08 17:56:17] parsec-barnes completed successfully.
+[2026-05-08 17:56:17] Saving PARSEC output to part2a_results/barnes_cpu.txt
+[2026-05-08 17:56:18] Deleting PARSEC job: parsec-barnes
+job.batch "parsec-barnes" deleted from default namespace
+[2026-05-08 17:56:18] Deleting ibench-cpu
+pod "ibench-cpu" deleted from default namespace
+I0508 17:57:03.709687   25366 reflector.go:578] "Warning: watch ended with error" reflector="k8s.io/client-go/tools/watch/informerwatcher.go:162" type="*unstructured.Unstructured" err="an error on the server (\"unable to decode an event from the watch stream: http2: client connection lost\") has prevented the request from succeeding"
+[2026-05-08 17:57:05] Finished experiment: barnes + cpu
+[2026-05-08 17:57:15] ========================================
+[2026-05-08 17:57:15] Starting experiment: barnes + l1d
+[2026-05-08 17:57:15] ========================================
+[2026-05-08 17:57:15] Starting ibench-l1d...
+pod/ibench-l1d created
+[2026-05-08 17:57:15] Waiting for ibench-l1d to be Ready...
+pod/ibench-l1d condition met
+[2026-05-08 17:57:18] ibench-l1d is Ready.
+[2026-05-08 17:57:28] Starting PARSEC workload: barnes
+job.batch/parsec-barnes created
+[2026-05-08 17:57:34] Detected job: parsec-barnes
+[2026-05-08 17:57:34] Waiting for parsec-barnes to complete...
+job.batch/parsec-barnes condition met
+[2026-05-08 18:00:30] parsec-barnes completed successfully.
+[2026-05-08 18:00:30] Saving PARSEC output to part2a_results/barnes_l1d.txt
+[2026-05-08 18:00:30] Deleting PARSEC job: parsec-barnes
+job.batch "parsec-barnes" deleted from default namespace
+[2026-05-08 18:00:30] Deleting ibench-l1d
+pod "ibench-l1d" deleted from default namespace
+[2026-05-08 18:01:01] Finished experiment: barnes + l1d
+[2026-05-08 18:01:11] ========================================
+[2026-05-08 18:01:11] Starting experiment: barnes + l1i
+[2026-05-08 18:01:11] ========================================
+[2026-05-08 18:01:11] Starting ibench-l1i...
+pod/ibench-l1i created
+[2026-05-08 18:01:11] Waiting for ibench-l1i to be Ready...
+pod/ibench-l1i condition met
+[2026-05-08 18:01:14] ibench-l1i is Ready.
+[2026-05-08 18:01:24] Starting PARSEC workload: barnes
+job.batch/parsec-barnes created
+[2026-05-08 18:01:29] Detected job: parsec-barnes
+[2026-05-08 18:01:29] Waiting for parsec-barnes to complete...
+job.batch/parsec-barnes condition met
+[2026-05-08 18:04:29] parsec-barnes completed successfully.
+[2026-05-08 18:04:29] Saving PARSEC output to part2a_results/barnes_l1i.txt
+[2026-05-08 18:04:29] Deleting PARSEC job: parsec-barnes
+job.batch "parsec-barnes" deleted from default namespace
+[2026-05-08 18:04:29] Deleting ibench-l1i
+pod "ibench-l1i" deleted from default namespace
+[2026-05-08 18:05:00] Finished experiment: barnes + l1i
+[2026-05-08 18:05:10] ========================================
+[2026-05-08 18:05:10] Starting experiment: barnes + l2
+[2026-05-08 18:05:10] ========================================
+[2026-05-08 18:05:10] Starting ibench-l2...
+pod/ibench-l2 created
+[2026-05-08 18:05:10] Waiting for ibench-l2 to be Ready...
+pod/ibench-l2 condition met
+[2026-05-08 18:05:13] ibench-l2 is Ready.
+[2026-05-08 18:05:23] Starting PARSEC workload: barnes
+job.batch/parsec-barnes created
+[2026-05-08 18:05:28] Detected job: parsec-barnes
+[2026-05-08 18:05:28] Waiting for parsec-barnes to complete...
+job.batch/parsec-barnes condition met
+[2026-05-08 18:08:32] parsec-barnes completed successfully.
+[2026-05-08 18:08:33] Saving PARSEC output to part2a_results/barnes_l2.txt
+[2026-05-08 18:08:33] Deleting PARSEC job: parsec-barnes
+job.batch "parsec-barnes" deleted from default namespace
+[2026-05-08 18:08:33] Deleting ibench-l2
+pod "ibench-l2" deleted from default namespace
+[2026-05-08 18:09:03] Finished experiment: barnes + l2
+[2026-05-08 18:09:13] ========================================
+[2026-05-08 18:09:13] Starting experiment: barnes + llc
+[2026-05-08 18:09:13] ========================================
+[2026-05-08 18:09:13] Starting ibench-llc...
+pod/ibench-llc created
+[2026-05-08 18:09:14] Waiting for ibench-llc to be Ready...
+pod/ibench-llc condition met
+[2026-05-08 18:09:16] ibench-llc is Ready.
+[2026-05-08 18:09:27] Starting PARSEC workload: barnes
+job.batch/parsec-barnes created
+[2026-05-08 18:09:32] Detected job: parsec-barnes
+[2026-05-08 18:09:32] Waiting for parsec-barnes to complete...
+job.batch/parsec-barnes condition met
+[2026-05-08 18:12:52] parsec-barnes completed successfully.
+[2026-05-08 18:12:52] Saving PARSEC output to part2a_results/barnes_llc.txt
+[2026-05-08 18:12:52] Deleting PARSEC job: parsec-barnes
+job.batch "parsec-barnes" deleted from default namespace
+[2026-05-08 18:12:53] Deleting ibench-llc
+pod "ibench-llc" deleted from default namespace
+[2026-05-08 18:13:23] Finished experiment: barnes + llc
+[2026-05-08 18:13:33] ========================================
+[2026-05-08 18:13:33] Starting experiment: barnes + membw
+[2026-05-08 18:13:33] ========================================
+[2026-05-08 18:13:33] Starting ibench-membw...
+pod/ibench-membw created
+[2026-05-08 18:13:34] Waiting for ibench-membw to be Ready...
+pod/ibench-membw condition met
+[2026-05-08 18:13:36] ibench-membw is Ready.
+[2026-05-08 18:13:46] Starting PARSEC workload: barnes
+job.batch/parsec-barnes created
+[2026-05-08 18:13:52] Detected job: parsec-barnes
+[2026-05-08 18:13:52] Waiting for parsec-barnes to complete...
+job.batch/parsec-barnes condition met
+[2026-05-08 18:17:06] parsec-barnes completed successfully.
+[2026-05-08 18:17:06] Saving PARSEC output to part2a_results/barnes_membw.txt
+[2026-05-08 18:17:06] Deleting PARSEC job: parsec-barnes
+job.batch "parsec-barnes" deleted from default namespace
+[2026-05-08 18:17:06] Deleting ibench-membw
+pod "ibench-membw" deleted from default namespace
+[2026-05-08 18:17:37] Finished experiment: barnes + membw
+[2026-05-08 18:17:47] ========================================
+[2026-05-08 18:17:47] Starting experiment: blackscholes + none
+[2026-05-08 18:17:47] ========================================
+[2026-05-08 18:17:47] Running baseline without interference.
+[2026-05-08 18:17:47] Starting PARSEC workload: blackscholes
+job.batch/parsec-blackscholes created
+[2026-05-08 18:17:53] Detected job: parsec-blackscholes
+[2026-05-08 18:17:53] Waiting for parsec-blackscholes to complete...
+job.batch/parsec-blackscholes condition met
+[2026-05-08 18:18:03] parsec-blackscholes completed successfully.
+[2026-05-08 18:18:03] Saving PARSEC output to part2a_results/blackscholes_none.txt
+[2026-05-08 18:18:03] Deleting PARSEC job: parsec-blackscholes
+job.batch "parsec-blackscholes" deleted from default namespace
+[2026-05-08 18:18:04] Finished experiment: blackscholes + none
+[2026-05-08 18:18:14] ========================================
+[2026-05-08 18:18:14] Starting experiment: blackscholes + cpu
+[2026-05-08 18:18:14] ========================================
+[2026-05-08 18:18:14] Starting ibench-cpu...
+pod/ibench-cpu created
+[2026-05-08 18:18:14] Waiting for ibench-cpu to be Ready...
+pod/ibench-cpu condition met
+[2026-05-08 18:18:15] ibench-cpu is Ready.
+[2026-05-08 18:18:25] Starting PARSEC workload: blackscholes
+job.batch/parsec-blackscholes created
+[2026-05-08 18:18:31] Detected job: parsec-blackscholes
+[2026-05-08 18:18:31] Waiting for parsec-blackscholes to complete...
+job.batch/parsec-blackscholes condition met
+[2026-05-08 18:18:31] parsec-blackscholes completed successfully.
+[2026-05-08 18:18:31] Saving PARSEC output to part2a_results/blackscholes_cpu.txt
+[2026-05-08 18:18:32] Deleting PARSEC job: parsec-blackscholes
+job.batch "parsec-blackscholes" deleted from default namespace
+[2026-05-08 18:18:32] Deleting ibench-cpu
+pod "ibench-cpu" deleted from default namespace
+[2026-05-08 18:19:02] Finished experiment: blackscholes + cpu
+[2026-05-08 18:19:12] ========================================
+[2026-05-08 18:19:12] Starting experiment: blackscholes + l1d
+[2026-05-08 18:19:12] ========================================
+[2026-05-08 18:19:12] Starting ibench-l1d...
+pod/ibench-l1d created
+[2026-05-08 18:19:13] Waiting for ibench-l1d to be Ready...
+pod/ibench-l1d condition met
+[2026-05-08 18:19:13] ibench-l1d is Ready.
+[2026-05-08 18:19:23] Starting PARSEC workload: blackscholes
+job.batch/parsec-blackscholes created
+[2026-05-08 18:19:29] Detected job: parsec-blackscholes
+[2026-05-08 18:19:29] Waiting for parsec-blackscholes to complete...
+job.batch/parsec-blackscholes condition met
+[2026-05-08 18:19:29] parsec-blackscholes completed successfully.
+[2026-05-08 18:19:29] Saving PARSEC output to part2a_results/blackscholes_l1d.txt
+[2026-05-08 18:19:29] Deleting PARSEC job: parsec-blackscholes
+job.batch "parsec-blackscholes" deleted from default namespace
+[2026-05-08 18:19:29] Deleting ibench-l1d
+pod "ibench-l1d" deleted from default namespace
+[2026-05-08 18:20:01] Finished experiment: blackscholes + l1d
+[2026-05-08 18:20:11] ========================================
+[2026-05-08 18:20:11] Starting experiment: blackscholes + l1i
+[2026-05-08 18:20:11] ========================================
+[2026-05-08 18:20:11] Starting ibench-l1i...
+pod/ibench-l1i created
+[2026-05-08 18:20:11] Waiting for ibench-l1i to be Ready...
+pod/ibench-l1i condition met
+[2026-05-08 18:20:13] ibench-l1i is Ready.
+[2026-05-08 18:20:23] Starting PARSEC workload: blackscholes
+job.batch/parsec-blackscholes created
+[2026-05-08 18:20:28] Detected job: parsec-blackscholes
+[2026-05-08 18:20:28] Waiting for parsec-blackscholes to complete...
+job.batch/parsec-blackscholes condition met
+[2026-05-08 18:20:28] parsec-blackscholes completed successfully.
+[2026-05-08 18:20:28] Saving PARSEC output to part2a_results/blackscholes_l1i.txt
+[2026-05-08 18:20:28] Deleting PARSEC job: parsec-blackscholes
+job.batch "parsec-blackscholes" deleted from default namespace
+[2026-05-08 18:20:28] Deleting ibench-l1i
+pod "ibench-l1i" deleted from default namespace
+[2026-05-08 18:21:00] Finished experiment: blackscholes + l1i
+[2026-05-08 18:21:10] ========================================
+[2026-05-08 18:21:10] Starting experiment: blackscholes + l2
+[2026-05-08 18:21:10] ========================================
+[2026-05-08 18:21:10] Starting ibench-l2...
+pod/ibench-l2 created
+[2026-05-08 18:21:10] Waiting for ibench-l2 to be Ready...
+pod/ibench-l2 condition met
+[2026-05-08 18:21:11] ibench-l2 is Ready.
+[2026-05-08 18:21:21] Starting PARSEC workload: blackscholes
+job.batch/parsec-blackscholes created
+[2026-05-08 18:21:26] Detected job: parsec-blackscholes
+[2026-05-08 18:21:26] Waiting for parsec-blackscholes to complete...
+job.batch/parsec-blackscholes condition met
+[2026-05-08 18:21:26] parsec-blackscholes completed successfully.
+[2026-05-08 18:21:26] Saving PARSEC output to part2a_results/blackscholes_l2.txt
+[2026-05-08 18:21:27] Deleting PARSEC job: parsec-blackscholes
+job.batch "parsec-blackscholes" deleted from default namespace
+[2026-05-08 18:21:27] Deleting ibench-l2
+pod "ibench-l2" deleted from default namespace
+[2026-05-08 18:21:58] Finished experiment: blackscholes + l2
+[2026-05-08 18:22:08] ========================================
+[2026-05-08 18:22:08] Starting experiment: blackscholes + llc
+[2026-05-08 18:22:08] ========================================
+[2026-05-08 18:22:08] Starting ibench-llc...
+pod/ibench-llc created
+[2026-05-08 18:22:08] Waiting for ibench-llc to be Ready...
+pod/ibench-llc condition met
+[2026-05-08 18:22:09] ibench-llc is Ready.
+[2026-05-08 18:22:19] Starting PARSEC workload: blackscholes
+job.batch/parsec-blackscholes created
+[2026-05-08 18:22:24] Detected job: parsec-blackscholes
+[2026-05-08 18:22:24] Waiting for parsec-blackscholes to complete...
+job.batch/parsec-blackscholes condition met
+[2026-05-08 18:22:25] parsec-blackscholes completed successfully.
+[2026-05-08 18:22:25] Saving PARSEC output to part2a_results/blackscholes_llc.txt
+[2026-05-08 18:22:25] Deleting PARSEC job: parsec-blackscholes
+job.batch "parsec-blackscholes" deleted from default namespace
+[2026-05-08 18:22:25] Deleting ibench-llc
+pod "ibench-llc" deleted from default namespace
+[2026-05-08 18:22:56] Finished experiment: blackscholes + llc
+[2026-05-08 18:23:06] ========================================
+[2026-05-08 18:23:06] Starting experiment: blackscholes + membw
+[2026-05-08 18:23:06] ========================================
+[2026-05-08 18:23:06] Starting ibench-membw...
+pod/ibench-membw created
+[2026-05-08 18:23:06] Waiting for ibench-membw to be Ready...
+pod/ibench-membw condition met
+[2026-05-08 18:23:07] ibench-membw is Ready.
+[2026-05-08 18:23:17] Starting PARSEC workload: blackscholes
+job.batch/parsec-blackscholes created
+[2026-05-08 18:23:22] Detected job: parsec-blackscholes
+[2026-05-08 18:23:22] Waiting for parsec-blackscholes to complete...
+job.batch/parsec-blackscholes condition met
+[2026-05-08 18:23:23] parsec-blackscholes completed successfully.
+[2026-05-08 18:23:23] Saving PARSEC output to part2a_results/blackscholes_membw.txt
+[2026-05-08 18:23:23] Deleting PARSEC job: parsec-blackscholes
+job.batch "parsec-blackscholes" deleted from default namespace
+[2026-05-08 18:23:24] Deleting ibench-membw
+pod "ibench-membw" deleted from default namespace
+[2026-05-08 18:23:54] Finished experiment: blackscholes + membw
+[2026-05-08 18:24:04] ========================================
+[2026-05-08 18:24:04] Starting experiment: canneal + none
+[2026-05-08 18:24:04] ========================================
+[2026-05-08 18:24:04] Running baseline without interference.
+[2026-05-08 18:24:04] Starting PARSEC workload: canneal
+job.batch/parsec-canneal created
+[2026-05-08 18:24:10] Detected job: parsec-canneal
+[2026-05-08 18:24:10] Waiting for parsec-canneal to complete...
+job.batch/parsec-canneal condition met
+[2026-05-08 18:24:25] parsec-canneal completed successfully.
+[2026-05-08 18:24:26] Saving PARSEC output to part2a_results/canneal_none.txt
+[2026-05-08 18:24:26] Deleting PARSEC job: parsec-canneal
+job.batch "parsec-canneal" deleted from default namespace
+[2026-05-08 18:24:26] Finished experiment: canneal + none
+[2026-05-08 18:24:36] ========================================
+[2026-05-08 18:24:36] Starting experiment: canneal + cpu
+[2026-05-08 18:24:36] ========================================
+[2026-05-08 18:24:36] Starting ibench-cpu...
+pod/ibench-cpu created
+[2026-05-08 18:24:36] Waiting for ibench-cpu to be Ready...
+pod/ibench-cpu condition met
+[2026-05-08 18:24:37] ibench-cpu is Ready.
+[2026-05-08 18:24:47] Starting PARSEC workload: canneal
+job.batch/parsec-canneal created
+[2026-05-08 18:24:53] Detected job: parsec-canneal
+[2026-05-08 18:24:53] Waiting for parsec-canneal to complete...
+job.batch/parsec-canneal condition met
+[2026-05-08 18:25:06] parsec-canneal completed successfully.
+[2026-05-08 18:25:06] Saving PARSEC output to part2a_results/canneal_cpu.txt
+[2026-05-08 18:25:06] Deleting PARSEC job: parsec-canneal
+job.batch "parsec-canneal" deleted from default namespace
+[2026-05-08 18:25:06] Deleting ibench-cpu
+pod "ibench-cpu" deleted from default namespace
+[2026-05-08 18:25:37] Finished experiment: canneal + cpu
+[2026-05-08 18:25:47] ========================================
+[2026-05-08 18:25:47] Starting experiment: canneal + l1d
+[2026-05-08 18:25:47] ========================================
+[2026-05-08 18:25:47] Starting ibench-l1d...
+pod/ibench-l1d created
+[2026-05-08 18:25:47] Waiting for ibench-l1d to be Ready...
+pod/ibench-l1d condition met
+[2026-05-08 18:25:48] ibench-l1d is Ready.
+[2026-05-08 18:25:58] Starting PARSEC workload: canneal
+job.batch/parsec-canneal created
+[2026-05-08 18:26:03] Detected job: parsec-canneal
+[2026-05-08 18:26:03] Waiting for parsec-canneal to complete...
+job.batch/parsec-canneal condition met
+[2026-05-08 18:26:18] parsec-canneal completed successfully.
+[2026-05-08 18:26:18] Saving PARSEC output to part2a_results/canneal_l1d.txt
+[2026-05-08 18:26:18] Deleting PARSEC job: parsec-canneal
+job.batch "parsec-canneal" deleted from default namespace
+[2026-05-08 18:26:18] Deleting ibench-l1d
+pod "ibench-l1d" deleted from default namespace
+[2026-05-08 18:26:49] Finished experiment: canneal + l1d
+[2026-05-08 18:26:59] ========================================
+[2026-05-08 18:26:59] Starting experiment: canneal + l1i
+[2026-05-08 18:26:59] ========================================
+[2026-05-08 18:26:59] Starting ibench-l1i...
+pod/ibench-l1i created
+[2026-05-08 18:26:59] Waiting for ibench-l1i to be Ready...
+pod/ibench-l1i condition met
+[2026-05-08 18:27:01] ibench-l1i is Ready.
+[2026-05-08 18:27:11] Starting PARSEC workload: canneal
+job.batch/parsec-canneal created
+[2026-05-08 18:27:16] Detected job: parsec-canneal
+[2026-05-08 18:27:16] Waiting for parsec-canneal to complete...
+job.batch/parsec-canneal condition met
+[2026-05-08 18:27:38] parsec-canneal completed successfully.
+[2026-05-08 18:27:38] Saving PARSEC output to part2a_results/canneal_l1i.txt
+[2026-05-08 18:27:38] Deleting PARSEC job: parsec-canneal
+job.batch "parsec-canneal" deleted from default namespace
+[2026-05-08 18:27:39] Deleting ibench-l1i
+pod "ibench-l1i" deleted from default namespace
+[2026-05-08 18:28:09] Finished experiment: canneal + l1i
+[2026-05-08 18:28:19] ========================================
+[2026-05-08 18:28:19] Starting experiment: canneal + l2
+[2026-05-08 18:28:19] ========================================
+[2026-05-08 18:28:19] Starting ibench-l2...
+pod/ibench-l2 created
+[2026-05-08 18:28:20] Waiting for ibench-l2 to be Ready...
+pod/ibench-l2 condition met
+[2026-05-08 18:28:21] ibench-l2 is Ready.
+[2026-05-08 18:28:31] Starting PARSEC workload: canneal
+job.batch/parsec-canneal created
+[2026-05-08 18:28:37] Detected job: parsec-canneal
+[2026-05-08 18:28:37] Waiting for parsec-canneal to complete...
+job.batch/parsec-canneal condition met
+[2026-05-08 18:28:54] parsec-canneal completed successfully.
+[2026-05-08 18:28:55] Saving PARSEC output to part2a_results/canneal_l2.txt
+[2026-05-08 18:28:55] Deleting PARSEC job: parsec-canneal
+job.batch "parsec-canneal" deleted from default namespace
+[2026-05-08 18:28:55] Deleting ibench-l2
+pod "ibench-l2" deleted from default namespace
+[2026-05-08 18:29:25] Finished experiment: canneal + l2
+[2026-05-08 18:29:35] ========================================
+[2026-05-08 18:29:35] Starting experiment: canneal + llc
+[2026-05-08 18:29:35] ========================================
+[2026-05-08 18:29:36] Starting ibench-llc...
+pod/ibench-llc created
+[2026-05-08 18:29:36] Waiting for ibench-llc to be Ready...
+pod/ibench-llc condition met
+[2026-05-08 18:29:36] ibench-llc is Ready.
+[2026-05-08 18:29:46] Starting PARSEC workload: canneal
+job.batch/parsec-canneal created
+[2026-05-08 18:29:52] Detected job: parsec-canneal
+[2026-05-08 18:29:52] Waiting for parsec-canneal to complete...
+job.batch/parsec-canneal condition met
+[2026-05-08 18:30:11] parsec-canneal completed successfully.
+[2026-05-08 18:30:11] Saving PARSEC output to part2a_results/canneal_llc.txt
+[2026-05-08 18:30:11] Deleting PARSEC job: parsec-canneal
+job.batch "parsec-canneal" deleted from default namespace
+[2026-05-08 18:30:11] Deleting ibench-llc
+pod "ibench-llc" deleted from default namespace
+[2026-05-08 18:30:42] Finished experiment: canneal + llc
+[2026-05-08 18:30:52] ========================================
+[2026-05-08 18:30:52] Starting experiment: canneal + membw
+[2026-05-08 18:30:52] ========================================
+[2026-05-08 18:30:52] Starting ibench-membw...
+pod/ibench-membw created
+[2026-05-08 18:30:52] Waiting for ibench-membw to be Ready...
+pod/ibench-membw condition met
+[2026-05-08 18:30:53] ibench-membw is Ready.
+[2026-05-08 18:31:03] Starting PARSEC workload: canneal
+job.batch/parsec-canneal created
+[2026-05-08 18:31:08] Detected job: parsec-canneal
+[2026-05-08 18:31:08] Waiting for parsec-canneal to complete...
+job.batch/parsec-canneal condition met
+[2026-05-08 18:31:26] parsec-canneal completed successfully.
+[2026-05-08 18:31:26] Saving PARSEC output to part2a_results/canneal_membw.txt
+[2026-05-08 18:31:26] Deleting PARSEC job: parsec-canneal
+job.batch "parsec-canneal" deleted from default namespace
+[2026-05-08 18:31:26] Deleting ibench-membw
+pod "ibench-membw" deleted from default namespace
+[2026-05-08 18:31:57] Finished experiment: canneal + membw
+[2026-05-08 18:32:07] ========================================
+[2026-05-08 18:32:07] Starting experiment: freqmine + none
+[2026-05-08 18:32:07] ========================================
+[2026-05-08 18:32:07] Running baseline without interference.
+[2026-05-08 18:32:07] Starting PARSEC workload: freqmine
+job.batch/parsec-freqmine created
+[2026-05-08 18:32:12] Detected job: parsec-freqmine
+[2026-05-08 18:32:12] Waiting for parsec-freqmine to complete...
+job.batch/parsec-freqmine condition met
+[2026-05-08 18:32:25] parsec-freqmine completed successfully.
+[2026-05-08 18:32:25] Saving PARSEC output to part2a_results/freqmine_none.txt
+[2026-05-08 18:32:25] Deleting PARSEC job: parsec-freqmine
+job.batch "parsec-freqmine" deleted from default namespace
+[2026-05-08 18:32:25] Finished experiment: freqmine + none
+[2026-05-08 18:32:35] ========================================
+[2026-05-08 18:32:35] Starting experiment: freqmine + cpu
+[2026-05-08 18:32:35] ========================================
+[2026-05-08 18:32:35] Starting ibench-cpu...
+pod/ibench-cpu created
+[2026-05-08 18:32:36] Waiting for ibench-cpu to be Ready...
+pod/ibench-cpu condition met
+[2026-05-08 18:32:37] ibench-cpu is Ready.
+[2026-05-08 18:32:47] Starting PARSEC workload: freqmine
+job.batch/parsec-freqmine created
+[2026-05-08 18:32:52] Detected job: parsec-freqmine
+[2026-05-08 18:32:52] Waiting for parsec-freqmine to complete...
+job.batch/parsec-freqmine condition met
+[2026-05-08 18:33:02] parsec-freqmine completed successfully.
+[2026-05-08 18:33:02] Saving PARSEC output to part2a_results/freqmine_cpu.txt
+[2026-05-08 18:33:02] Deleting PARSEC job: parsec-freqmine
+job.batch "parsec-freqmine" deleted from default namespace
+[2026-05-08 18:33:03] Deleting ibench-cpu
+pod "ibench-cpu" deleted from default namespace
+[2026-05-08 18:33:33] Finished experiment: freqmine + cpu
+[2026-05-08 18:33:43] ========================================
+[2026-05-08 18:33:43] Starting experiment: freqmine + l1d
+[2026-05-08 18:33:43] ========================================
+[2026-05-08 18:33:43] Starting ibench-l1d...
+pod/ibench-l1d created
+[2026-05-08 18:33:44] Waiting for ibench-l1d to be Ready...
+pod/ibench-l1d condition met
+[2026-05-08 18:33:45] ibench-l1d is Ready.
+[2026-05-08 18:33:55] Starting PARSEC workload: freqmine
+job.batch/parsec-freqmine created
+[2026-05-08 18:34:01] Detected job: parsec-freqmine
+[2026-05-08 18:34:01] Waiting for parsec-freqmine to complete...
+job.batch/parsec-freqmine condition met
+[2026-05-08 18:34:06] parsec-freqmine completed successfully.
+[2026-05-08 18:34:07] Saving PARSEC output to part2a_results/freqmine_l1d.txt
+[2026-05-08 18:34:07] Deleting PARSEC job: parsec-freqmine
+job.batch "parsec-freqmine" deleted from default namespace
+[2026-05-08 18:34:07] Deleting ibench-l1d
+pod "ibench-l1d" deleted from default namespace
+[2026-05-08 18:34:37] Finished experiment: freqmine + l1d
+[2026-05-08 18:34:47] ========================================
+[2026-05-08 18:34:47] Starting experiment: freqmine + l1i
+[2026-05-08 18:34:47] ========================================
+[2026-05-08 18:34:47] Starting ibench-l1i...
+pod/ibench-l1i created
+[2026-05-08 18:34:48] Waiting for ibench-l1i to be Ready...
+pod/ibench-l1i condition met
+[2026-05-08 18:34:49] ibench-l1i is Ready.
+[2026-05-08 18:34:59] Starting PARSEC workload: freqmine
+job.batch/parsec-freqmine created
+[2026-05-08 18:35:05] Detected job: parsec-freqmine
+[2026-05-08 18:35:05] Waiting for parsec-freqmine to complete...
+job.batch/parsec-freqmine condition met
+[2026-05-08 18:35:15] parsec-freqmine completed successfully.
+[2026-05-08 18:35:15] Saving PARSEC output to part2a_results/freqmine_l1i.txt
+[2026-05-08 18:35:15] Deleting PARSEC job: parsec-freqmine
+job.batch "parsec-freqmine" deleted from default namespace
+[2026-05-08 18:35:15] Deleting ibench-l1i
+pod "ibench-l1i" deleted from default namespace
+[2026-05-08 18:35:46] Finished experiment: freqmine + l1i
+[2026-05-08 18:35:56] ========================================
+[2026-05-08 18:35:56] Starting experiment: freqmine + l2
+[2026-05-08 18:35:56] ========================================
+[2026-05-08 18:35:56] Starting ibench-l2...
+pod/ibench-l2 created
+[2026-05-08 18:35:56] Waiting for ibench-l2 to be Ready...
+pod/ibench-l2 condition met
+[2026-05-08 18:35:57] ibench-l2 is Ready.
+[2026-05-08 18:36:07] Starting PARSEC workload: freqmine
+job.batch/parsec-freqmine created
+[2026-05-08 18:36:12] Detected job: parsec-freqmine
+[2026-05-08 18:36:12] Waiting for parsec-freqmine to complete...
+job.batch/parsec-freqmine condition met
+[2026-05-08 18:36:19] parsec-freqmine completed successfully.
+[2026-05-08 18:36:19] Saving PARSEC output to part2a_results/freqmine_l2.txt
+[2026-05-08 18:36:19] Deleting PARSEC job: parsec-freqmine
+job.batch "parsec-freqmine" deleted from default namespace
+[2026-05-08 18:36:19] Deleting ibench-l2
+pod "ibench-l2" deleted from default namespace
+[2026-05-08 18:36:50] Finished experiment: freqmine + l2
+[2026-05-08 18:37:00] ========================================
+[2026-05-08 18:37:00] Starting experiment: freqmine + llc
+[2026-05-08 18:37:00] ========================================
+[2026-05-08 18:37:00] Starting ibench-llc...
+pod/ibench-llc created
+[2026-05-08 18:37:00] Waiting for ibench-llc to be Ready...
+pod/ibench-llc condition met
+[2026-05-08 18:37:01] ibench-llc is Ready.
+[2026-05-08 18:37:11] Starting PARSEC workload: freqmine
+job.batch/parsec-freqmine created
+[2026-05-08 18:37:16] Detected job: parsec-freqmine
+[2026-05-08 18:37:16] Waiting for parsec-freqmine to complete...
+job.batch/parsec-freqmine condition met
+[2026-05-08 18:37:25] parsec-freqmine completed successfully.
+[2026-05-08 18:37:25] Saving PARSEC output to part2a_results/freqmine_llc.txt
+[2026-05-08 18:37:25] Deleting PARSEC job: parsec-freqmine
+job.batch "parsec-freqmine" deleted from default namespace
+[2026-05-08 18:37:25] Deleting ibench-llc
+pod "ibench-llc" deleted from default namespace
+[2026-05-08 18:37:56] Finished experiment: freqmine + llc
+[2026-05-08 18:38:06] ========================================
+[2026-05-08 18:38:06] Starting experiment: freqmine + membw
+[2026-05-08 18:38:06] ========================================
+[2026-05-08 18:38:06] Starting ibench-membw...
+pod/ibench-membw created
+[2026-05-08 18:38:07] Waiting for ibench-membw to be Ready...
+pod/ibench-membw condition met
+[2026-05-08 18:38:08] ibench-membw is Ready.
+[2026-05-08 18:38:18] Starting PARSEC workload: freqmine
+job.batch/parsec-freqmine created
+[2026-05-08 18:38:24] Detected job: parsec-freqmine
+[2026-05-08 18:38:24] Waiting for parsec-freqmine to complete...
+job.batch/parsec-freqmine condition met
+[2026-05-08 18:38:32] parsec-freqmine completed successfully.
+[2026-05-08 18:38:32] Saving PARSEC output to part2a_results/freqmine_membw.txt
+[2026-05-08 18:38:33] Deleting PARSEC job: parsec-freqmine
+job.batch "parsec-freqmine" deleted from default namespace
+[2026-05-08 18:38:33] Deleting ibench-membw
+pod "ibench-membw" deleted from default namespace
+[2026-05-08 18:39:03] Finished experiment: freqmine + membw
+[2026-05-08 18:39:13] ========================================
+[2026-05-08 18:39:13] Starting experiment: radix + none
+[2026-05-08 18:39:13] ========================================
+[2026-05-08 18:39:13] Running baseline without interference.
+[2026-05-08 18:39:13] Starting PARSEC workload: radix
+job.batch/parsec-radix created
+[2026-05-08 18:39:19] Detected job: parsec-radix
+[2026-05-08 18:39:19] Waiting for parsec-radix to complete...
+job.batch/parsec-radix condition met
+[2026-05-08 18:40:08] parsec-radix completed successfully.
+[2026-05-08 18:40:08] Saving PARSEC output to part2a_results/radix_none.txt
+[2026-05-08 18:40:08] Deleting PARSEC job: parsec-radix
+job.batch "parsec-radix" deleted from default namespace
+[2026-05-08 18:40:08] Finished experiment: radix + none
+[2026-05-08 18:40:18] ========================================
+[2026-05-08 18:40:18] Starting experiment: radix + cpu
+[2026-05-08 18:40:18] ========================================
+[2026-05-08 18:40:18] Starting ibench-cpu...
+pod/ibench-cpu created
+[2026-05-08 18:40:18] Waiting for ibench-cpu to be Ready...
+pod/ibench-cpu condition met
+[2026-05-08 18:40:20] ibench-cpu is Ready.
+[2026-05-08 18:40:30] Starting PARSEC workload: radix
+job.batch/parsec-radix created
+[2026-05-08 18:40:35] Detected job: parsec-radix
+[2026-05-08 18:40:35] Waiting for parsec-radix to complete...
+job.batch/parsec-radix condition met
+[2026-05-08 18:41:13] parsec-radix completed successfully.
+[2026-05-08 18:41:13] Saving PARSEC output to part2a_results/radix_cpu.txt
+[2026-05-08 18:41:13] Deleting PARSEC job: parsec-radix
+job.batch "parsec-radix" deleted from default namespace
+[2026-05-08 18:41:13] Deleting ibench-cpu
+pod "ibench-cpu" deleted from default namespace
+[2026-05-08 18:41:44] Finished experiment: radix + cpu
+[2026-05-08 18:41:54] ========================================
+[2026-05-08 18:41:54] Starting experiment: radix + l1d
+[2026-05-08 18:41:54] ========================================
+[2026-05-08 18:41:54] Starting ibench-l1d...
+pod/ibench-l1d created
+[2026-05-08 18:41:54] Waiting for ibench-l1d to be Ready...
+pod/ibench-l1d condition met
+[2026-05-08 18:41:55] ibench-l1d is Ready.
+[2026-05-08 18:42:05] Starting PARSEC workload: radix
+job.batch/parsec-radix created
+[2026-05-08 18:42:10] Detected job: parsec-radix
+[2026-05-08 18:42:10] Waiting for parsec-radix to complete...
+job.batch/parsec-radix condition met
+[2026-05-08 18:42:51] parsec-radix completed successfully.
+[2026-05-08 18:42:51] Saving PARSEC output to part2a_results/radix_l1d.txt
+[2026-05-08 18:42:51] Deleting PARSEC job: parsec-radix
+job.batch "parsec-radix" deleted from default namespace
+[2026-05-08 18:42:52] Deleting ibench-l1d
+pod "ibench-l1d" deleted from default namespace
+[2026-05-08 18:43:22] Finished experiment: radix + l1d
+[2026-05-08 18:43:32] ========================================
+[2026-05-08 18:43:32] Starting experiment: radix + l1i
+[2026-05-08 18:43:32] ========================================
+[2026-05-08 18:43:32] Starting ibench-l1i...
+pod/ibench-l1i created
+[2026-05-08 18:43:33] Waiting for ibench-l1i to be Ready...
+pod/ibench-l1i condition met
+[2026-05-08 18:43:34] ibench-l1i is Ready.
+[2026-05-08 18:43:44] Starting PARSEC workload: radix
+job.batch/parsec-radix created
+[2026-05-08 18:43:50] Detected job: parsec-radix
+[2026-05-08 18:43:50] Waiting for parsec-radix to complete...
+job.batch/parsec-radix condition met
+[2026-05-08 18:44:30] parsec-radix completed successfully.
+[2026-05-08 18:44:31] Saving PARSEC output to part2a_results/radix_l1i.txt
+[2026-05-08 18:44:31] Deleting PARSEC job: parsec-radix
+job.batch "parsec-radix" deleted from default namespace
+[2026-05-08 18:44:31] Deleting ibench-l1i
+pod "ibench-l1i" deleted from default namespace
+[2026-05-08 18:45:02] Finished experiment: radix + l1i
+[2026-05-08 18:45:12] ========================================
+[2026-05-08 18:45:12] Starting experiment: radix + l2
+[2026-05-08 18:45:12] ========================================
+[2026-05-08 18:45:12] Starting ibench-l2...
+pod/ibench-l2 created
+[2026-05-08 18:45:12] Waiting for ibench-l2 to be Ready...
+pod/ibench-l2 condition met
+[2026-05-08 18:45:14] ibench-l2 is Ready.
+[2026-05-08 18:45:24] Starting PARSEC workload: radix
+job.batch/parsec-radix created
+[2026-05-08 18:45:29] Detected job: parsec-radix
+[2026-05-08 18:45:29] Waiting for parsec-radix to complete...
+job.batch/parsec-radix condition met
+[2026-05-08 18:46:13] parsec-radix completed successfully.
+[2026-05-08 18:46:13] Saving PARSEC output to part2a_results/radix_l2.txt
+[2026-05-08 18:46:13] Deleting PARSEC job: parsec-radix
+job.batch "parsec-radix" deleted from default namespace
+[2026-05-08 18:46:13] Deleting ibench-l2
+pod "ibench-l2" deleted from default namespace
+[2026-05-08 18:46:44] Finished experiment: radix + l2
+[2026-05-08 18:46:54] ========================================
+[2026-05-08 18:46:54] Starting experiment: radix + llc
+[2026-05-08 18:46:54] ========================================
+[2026-05-08 18:46:54] Starting ibench-llc...
+pod/ibench-llc created
+[2026-05-08 18:46:54] Waiting for ibench-llc to be Ready...
+pod/ibench-llc condition met
+[2026-05-08 18:46:56] ibench-llc is Ready.
+[2026-05-08 18:47:06] Starting PARSEC workload: radix
+job.batch/parsec-radix created
+[2026-05-08 18:47:11] Detected job: parsec-radix
+[2026-05-08 18:47:11] Waiting for parsec-radix to complete...
+job.batch/parsec-radix condition met
+[2026-05-08 18:47:55] parsec-radix completed successfully.
+[2026-05-08 18:47:55] Saving PARSEC output to part2a_results/radix_llc.txt
+[2026-05-08 18:47:55] Deleting PARSEC job: parsec-radix
+job.batch "parsec-radix" deleted from default namespace
+[2026-05-08 18:47:55] Deleting ibench-llc
+pod "ibench-llc" deleted from default namespace
+[2026-05-08 18:48:26] Finished experiment: radix + llc
+[2026-05-08 18:48:36] ========================================
+[2026-05-08 18:48:36] Starting experiment: radix + membw
+[2026-05-08 18:48:36] ========================================
+[2026-05-08 18:48:36] Starting ibench-membw...
+pod/ibench-membw created
+[2026-05-08 18:48:37] Waiting for ibench-membw to be Ready...
+pod/ibench-membw condition met
+[2026-05-08 18:48:37] ibench-membw is Ready.
+[2026-05-08 18:48:47] Starting PARSEC workload: radix
+job.batch/parsec-radix created
+[2026-05-08 18:48:53] Detected job: parsec-radix
+[2026-05-08 18:48:53] Waiting for parsec-radix to complete...
+job.batch/parsec-radix condition met
+[2026-05-08 18:49:45] parsec-radix completed successfully.
+[2026-05-08 18:49:45] Saving PARSEC output to part2a_results/radix_membw.txt
+[2026-05-08 18:49:45] Deleting PARSEC job: parsec-radix
+job.batch "parsec-radix" deleted from default namespace
+[2026-05-08 18:49:45] Deleting ibench-membw
+pod "ibench-membw" deleted from default namespace
+[2026-05-08 18:50:16] Finished experiment: radix + membw
+[2026-05-08 18:50:26] ========================================
+[2026-05-08 18:50:26] Starting experiment: streamcluster + none
+[2026-05-08 18:50:26] ========================================
+[2026-05-08 18:50:26] Running baseline without interference.
+[2026-05-08 18:50:26] Starting PARSEC workload: streamcluster
+job.batch/parsec-streamcluster created
+[2026-05-08 18:50:31] Detected job: parsec-streamcluster
+[2026-05-08 18:50:31] Waiting for parsec-streamcluster to complete...
+job.batch/parsec-streamcluster condition met
+[2026-05-08 18:50:39] parsec-streamcluster completed successfully.
+[2026-05-08 18:50:39] Saving PARSEC output to part2a_results/streamcluster_none.txt
+[2026-05-08 18:50:39] Deleting PARSEC job: parsec-streamcluster
+job.batch "parsec-streamcluster" deleted from default namespace
+[2026-05-08 18:50:39] Finished experiment: streamcluster + none
+[2026-05-08 18:50:49] ========================================
+[2026-05-08 18:50:49] Starting experiment: streamcluster + cpu
+[2026-05-08 18:50:49] ========================================
+[2026-05-08 18:50:49] Starting ibench-cpu...
+pod/ibench-cpu created
+[2026-05-08 18:50:49] Waiting for ibench-cpu to be Ready...
+pod/ibench-cpu condition met
+[2026-05-08 18:50:51] ibench-cpu is Ready.
+[2026-05-08 18:51:01] Starting PARSEC workload: streamcluster
+job.batch/parsec-streamcluster created
+[2026-05-08 18:51:06] Detected job: parsec-streamcluster
+[2026-05-08 18:51:06] Waiting for parsec-streamcluster to complete...
+job.batch/parsec-streamcluster condition met
+[2026-05-08 18:51:13] parsec-streamcluster completed successfully.
+[2026-05-08 18:51:13] Saving PARSEC output to part2a_results/streamcluster_cpu.txt
+[2026-05-08 18:51:13] Deleting PARSEC job: parsec-streamcluster
+job.batch "parsec-streamcluster" deleted from default namespace
+[2026-05-08 18:51:13] Deleting ibench-cpu
+pod "ibench-cpu" deleted from default namespace
+[2026-05-08 18:51:44] Finished experiment: streamcluster + cpu
+[2026-05-08 18:51:54] ========================================
+[2026-05-08 18:51:54] Starting experiment: streamcluster + l1d
+[2026-05-08 18:51:54] ========================================
+[2026-05-08 18:51:54] Starting ibench-l1d...
+pod/ibench-l1d created
+[2026-05-08 18:51:54] Waiting for ibench-l1d to be Ready...
+pod/ibench-l1d condition met
+[2026-05-08 18:51:55] ibench-l1d is Ready.
+[2026-05-08 18:52:05] Starting PARSEC workload: streamcluster
+job.batch/parsec-streamcluster created
+[2026-05-08 18:52:10] Detected job: parsec-streamcluster
+[2026-05-08 18:52:10] Waiting for parsec-streamcluster to complete...
+job.batch/parsec-streamcluster condition met
+[2026-05-08 18:52:19] parsec-streamcluster completed successfully.
+[2026-05-08 18:52:19] Saving PARSEC output to part2a_results/streamcluster_l1d.txt
+[2026-05-08 18:52:19] Deleting PARSEC job: parsec-streamcluster
+job.batch "parsec-streamcluster" deleted from default namespace
+[2026-05-08 18:52:19] Deleting ibench-l1d
+pod "ibench-l1d" deleted from default namespace
+[2026-05-08 18:52:50] Finished experiment: streamcluster + l1d
+[2026-05-08 18:53:00] ========================================
+[2026-05-08 18:53:00] Starting experiment: streamcluster + l1i
+[2026-05-08 18:53:00] ========================================
+[2026-05-08 18:53:00] Starting ibench-l1i...
+pod/ibench-l1i created
+[2026-05-08 18:53:00] Waiting for ibench-l1i to be Ready...
+pod/ibench-l1i condition met
+[2026-05-08 18:53:02] ibench-l1i is Ready.
+[2026-05-08 18:53:12] Starting PARSEC workload: streamcluster
+job.batch/parsec-streamcluster created
+[2026-05-08 18:53:17] Detected job: parsec-streamcluster
+[2026-05-08 18:53:17] Waiting for parsec-streamcluster to complete...
+job.batch/parsec-streamcluster condition met
+[2026-05-08 18:53:27] parsec-streamcluster completed successfully.
+[2026-05-08 18:53:27] Saving PARSEC output to part2a_results/streamcluster_l1i.txt
+[2026-05-08 18:53:27] Deleting PARSEC job: parsec-streamcluster
+job.batch "parsec-streamcluster" deleted from default namespace
+[2026-05-08 18:53:28] Deleting ibench-l1i
+pod "ibench-l1i" deleted from default namespace
+[2026-05-08 18:53:58] Finished experiment: streamcluster + l1i
+[2026-05-08 18:54:08] ========================================
+[2026-05-08 18:54:08] Starting experiment: streamcluster + l2
+[2026-05-08 18:54:08] ========================================
+[2026-05-08 18:54:08] Starting ibench-l2...
+pod/ibench-l2 created
+[2026-05-08 18:54:09] Waiting for ibench-l2 to be Ready...
+pod/ibench-l2 condition met
+[2026-05-08 18:54:09] ibench-l2 is Ready.
+[2026-05-08 18:54:19] Starting PARSEC workload: streamcluster
+job.batch/parsec-streamcluster created
+[2026-05-08 18:54:25] Detected job: parsec-streamcluster
+[2026-05-08 18:54:25] Waiting for parsec-streamcluster to complete...
+job.batch/parsec-streamcluster condition met
+[2026-05-08 18:54:32] parsec-streamcluster completed successfully.
+[2026-05-08 18:54:33] Saving PARSEC output to part2a_results/streamcluster_l2.txt
+[2026-05-08 18:54:33] Deleting PARSEC job: parsec-streamcluster
+job.batch "parsec-streamcluster" deleted from default namespace
+[2026-05-08 18:54:33] Deleting ibench-l2
+pod "ibench-l2" deleted from default namespace
+[2026-05-08 18:55:03] Finished experiment: streamcluster + l2
+[2026-05-08 18:55:13] ========================================
+[2026-05-08 18:55:13] Starting experiment: streamcluster + llc
+[2026-05-08 18:55:14] ========================================
+[2026-05-08 18:55:14] Starting ibench-llc...
+pod/ibench-llc created
+[2026-05-08 18:55:14] Waiting for ibench-llc to be Ready...
+pod/ibench-llc condition met
+[2026-05-08 18:55:15] ibench-llc is Ready.
+[2026-05-08 18:55:26] Starting PARSEC workload: streamcluster
+job.batch/parsec-streamcluster created
+[2026-05-08 18:55:31] Detected job: parsec-streamcluster
+[2026-05-08 18:55:31] Waiting for parsec-streamcluster to complete...
+job.batch/parsec-streamcluster condition met
+[2026-05-08 18:55:44] parsec-streamcluster completed successfully.
+[2026-05-08 18:55:44] Saving PARSEC output to part2a_results/streamcluster_llc.txt
+[2026-05-08 18:55:44] Deleting PARSEC job: parsec-streamcluster
+job.batch "parsec-streamcluster" deleted from default namespace
+[2026-05-08 18:55:44] Deleting ibench-llc
+pod "ibench-llc" deleted from default namespace
+[2026-05-08 18:56:15] Finished experiment: streamcluster + llc
+[2026-05-08 18:56:25] ========================================
+[2026-05-08 18:56:25] Starting experiment: streamcluster + membw
+[2026-05-08 18:56:25] ========================================
+[2026-05-08 18:56:25] Starting ibench-membw...
+pod/ibench-membw created
+[2026-05-08 18:56:25] Waiting for ibench-membw to be Ready...
+pod/ibench-membw condition met
+[2026-05-08 18:56:26] ibench-membw is Ready.
+[2026-05-08 18:56:36] Starting PARSEC workload: streamcluster
+job.batch/parsec-streamcluster created
+[2026-05-08 18:56:41] Detected job: parsec-streamcluster
+[2026-05-08 18:56:41] Waiting for parsec-streamcluster to complete...
+job.batch/parsec-streamcluster condition met
+[2026-05-08 18:56:54] parsec-streamcluster completed successfully.
+[2026-05-08 18:56:54] Saving PARSEC output to part2a_results/streamcluster_membw.txt
+[2026-05-08 18:56:54] Deleting PARSEC job: parsec-streamcluster
+job.batch "parsec-streamcluster" deleted from default namespace
+[2026-05-08 18:56:54] Deleting ibench-membw
+pod "ibench-membw" deleted from default namespace
+[2026-05-08 18:57:25] Finished experiment: streamcluster + membw
+[2026-05-08 18:57:35] ========================================
+[2026-05-08 18:57:35] Starting experiment: vips + none
+[2026-05-08 18:57:35] ========================================
+[2026-05-08 18:57:35] Running baseline without interference.
+[2026-05-08 18:57:35] Starting PARSEC workload: vips
+job.batch/parsec-vips created
+[2026-05-08 18:57:40] Detected job: parsec-vips
+[2026-05-08 18:57:40] Waiting for parsec-vips to complete...
+job.batch/parsec-vips condition met
+[2026-05-08 18:59:39] parsec-vips completed successfully.
+[2026-05-08 18:59:39] Saving PARSEC output to part2a_results/vips_none.txt
+[2026-05-08 18:59:39] Deleting PARSEC job: parsec-vips
+job.batch "parsec-vips" deleted from default namespace
+[2026-05-08 18:59:39] Finished experiment: vips + none
+[2026-05-08 18:59:49] ========================================
+[2026-05-08 18:59:49] Starting experiment: vips + cpu
+[2026-05-08 18:59:49] ========================================
+[2026-05-08 18:59:49] Starting ibench-cpu...
+pod/ibench-cpu created
+[2026-05-08 18:59:50] Waiting for ibench-cpu to be Ready...
+pod/ibench-cpu condition met
+[2026-05-08 18:59:51] ibench-cpu is Ready.
+[2026-05-08 19:00:01] Starting PARSEC workload: vips
+job.batch/parsec-vips created
+[2026-05-08 19:00:06] Detected job: parsec-vips
+[2026-05-08 19:00:06] Waiting for parsec-vips to complete...
+job.batch/parsec-vips condition met
+[2026-05-08 19:02:02] parsec-vips completed successfully.
+[2026-05-08 19:02:02] Saving PARSEC output to part2a_results/vips_cpu.txt
+[2026-05-08 19:02:03] Deleting PARSEC job: parsec-vips
+job.batch "parsec-vips" deleted from default namespace
+[2026-05-08 19:02:03] Deleting ibench-cpu
+pod "ibench-cpu" deleted from default namespace
+[2026-05-08 19:02:33] Finished experiment: vips + cpu
+[2026-05-08 19:02:43] ========================================
+[2026-05-08 19:02:43] Starting experiment: vips + l1d
+[2026-05-08 19:02:43] ========================================
+[2026-05-08 19:02:43] Starting ibench-l1d...
+pod/ibench-l1d created
+[2026-05-08 19:02:44] Waiting for ibench-l1d to be Ready...
+pod/ibench-l1d condition met
+[2026-05-08 19:02:44] ibench-l1d is Ready.
+[2026-05-08 19:02:54] Starting PARSEC workload: vips
+job.batch/parsec-vips created
+[2026-05-08 19:03:00] Detected job: parsec-vips
+[2026-05-08 19:03:00] Waiting for parsec-vips to complete...
+job.batch/parsec-vips condition met
+[2026-05-08 19:04:43] parsec-vips completed successfully.
+[2026-05-08 19:04:43] Saving PARSEC output to part2a_results/vips_l1d.txt
+[2026-05-08 19:04:43] Deleting PARSEC job: parsec-vips
+job.batch "parsec-vips" deleted from default namespace
+[2026-05-08 19:04:43] Deleting ibench-l1d
+pod "ibench-l1d" deleted from default namespace
+[2026-05-08 19:05:14] Finished experiment: vips + l1d
+[2026-05-08 19:05:24] ========================================
+[2026-05-08 19:05:24] Starting experiment: vips + l1i
+[2026-05-08 19:05:24] ========================================
+[2026-05-08 19:05:24] Starting ibench-l1i...
+pod/ibench-l1i created
+[2026-05-08 19:05:24] Waiting for ibench-l1i to be Ready...
+pod/ibench-l1i condition met
+[2026-05-08 19:05:26] ibench-l1i is Ready.
+[2026-05-08 19:05:36] Starting PARSEC workload: vips
+job.batch/parsec-vips created
+[2026-05-08 19:05:41] Detected job: parsec-vips
+[2026-05-08 19:05:41] Waiting for parsec-vips to complete...
+job.batch/parsec-vips condition met
+[2026-05-08 19:07:30] parsec-vips completed successfully.
+[2026-05-08 19:07:30] Saving PARSEC output to part2a_results/vips_l1i.txt
+[2026-05-08 19:07:31] Deleting PARSEC job: parsec-vips
+job.batch "parsec-vips" deleted from default namespace
+[2026-05-08 19:07:31] Deleting ibench-l1i
+pod "ibench-l1i" deleted from default namespace
+[2026-05-08 19:08:01] Finished experiment: vips + l1i
+[2026-05-08 19:08:11] ========================================
+[2026-05-08 19:08:11] Starting experiment: vips + l2
+[2026-05-08 19:08:11] ========================================
+[2026-05-08 19:08:11] Starting ibench-l2...
+pod/ibench-l2 created
+[2026-05-08 19:08:12] Waiting for ibench-l2 to be Ready...
+pod/ibench-l2 condition met
+[2026-05-08 19:08:13] ibench-l2 is Ready.
+[2026-05-08 19:08:23] Starting PARSEC workload: vips
+job.batch/parsec-vips created
+[2026-05-08 19:08:29] Detected job: parsec-vips
+[2026-05-08 19:08:29] Waiting for parsec-vips to complete...
+job.batch/parsec-vips condition met
+[2026-05-08 19:10:40] parsec-vips completed successfully.
+[2026-05-08 19:10:40] Saving PARSEC output to part2a_results/vips_l2.txt
+[2026-05-08 19:10:40] Deleting PARSEC job: parsec-vips
+job.batch "parsec-vips" deleted from default namespace
+[2026-05-08 19:10:40] Deleting ibench-l2
+pod "ibench-l2" deleted from default namespace
+[2026-05-08 19:11:11] Finished experiment: vips + l2
+[2026-05-08 19:11:21] ========================================
+[2026-05-08 19:11:21] Starting experiment: vips + llc
+[2026-05-08 19:11:21] ========================================
+[2026-05-08 19:11:21] Starting ibench-llc...
+pod/ibench-llc created
+[2026-05-08 19:11:21] Waiting for ibench-llc to be Ready...
+pod/ibench-llc condition met
+[2026-05-08 19:11:23] ibench-llc is Ready.
+[2026-05-08 19:11:33] Starting PARSEC workload: vips
+job.batch/parsec-vips created
+[2026-05-08 19:11:38] Detected job: parsec-vips
+[2026-05-08 19:11:38] Waiting for parsec-vips to complete...
+job.batch/parsec-vips condition met
+[2026-05-08 19:13:37] parsec-vips completed successfully.
+[2026-05-08 19:13:38] Saving PARSEC output to part2a_results/vips_llc.txt
+[2026-05-08 19:13:38] Deleting PARSEC job: parsec-vips
+job.batch "parsec-vips" deleted from default namespace
+[2026-05-08 19:13:38] Deleting ibench-llc
+pod "ibench-llc" deleted from default namespace
+[2026-05-08 19:14:09] Finished experiment: vips + llc
+[2026-05-08 19:14:19] ========================================
+[2026-05-08 19:14:19] Starting experiment: vips + membw
+[2026-05-08 19:14:19] ========================================
+[2026-05-08 19:14:19] Starting ibench-membw...
+pod/ibench-membw created
+[2026-05-08 19:14:19] Waiting for ibench-membw to be Ready...
+pod/ibench-membw condition met
+[2026-05-08 19:14:21] ibench-membw is Ready.
+[2026-05-08 19:14:31] Starting PARSEC workload: vips
+job.batch/parsec-vips created
+[2026-05-08 19:14:36] Detected job: parsec-vips
+[2026-05-08 19:14:36] Waiting for parsec-vips to complete...
+job.batch/parsec-vips condition met
+[2026-05-08 19:16:31] parsec-vips completed successfully.
+[2026-05-08 19:16:31] Saving PARSEC output to part2a_results/vips_membw.txt
+[2026-05-08 19:16:31] Deleting PARSEC job: parsec-vips
+job.batch "parsec-vips" deleted from default namespace
+[2026-05-08 19:16:31] Deleting ibench-membw
+pod "ibench-membw" deleted from default namespace
+[2026-05-08 19:17:02] Finished experiment: vips + membw
+[2026-05-08 19:17:12] All Part 2.1 experiments completed.
