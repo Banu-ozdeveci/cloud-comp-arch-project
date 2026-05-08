@@ -1,0 +1,393 @@
+[2026-05-08 23:49:00] ========================================
+[2026-05-08 23:49:00] Starting experiment: barnes with 1 thread(s)
+[2026-05-08 23:49:00] ========================================
+[2026-05-08 23:49:00] Cleaning old job/pods for parsec-barnes...
+[2026-05-08 23:49:00] Creating temporary YAML with -n 1
+[2026-05-08 23:49:00] Launching job: parsec-barnes
+job.batch/parsec-barnes created
+[2026-05-08 23:49:01] Waiting for parsec-barnes to complete...
+job.batch/parsec-barnes condition met
+[2026-05-08 23:51:22] parsec-barnes completed successfully.
+[2026-05-08 23:51:22] Saving output to part2_b_results/barnes_1threads.txt
+[2026-05-08 23:51:22] Cleaning old job/pods for parsec-barnes...
+job.batch "parsec-barnes" deleted from default namespace
+[2026-05-08 23:51:23] Finished experiment: barnes with 1 thread(s)
+[2026-05-08 23:51:28] ========================================
+[2026-05-08 23:51:28] Starting experiment: barnes with 2 thread(s)
+[2026-05-08 23:51:28] ========================================
+[2026-05-08 23:51:28] Cleaning old job/pods for parsec-barnes...
+[2026-05-08 23:51:28] Creating temporary YAML with -n 2
+[2026-05-08 23:51:28] Launching job: parsec-barnes
+job.batch/parsec-barnes created
+[2026-05-08 23:51:28] Waiting for parsec-barnes to complete...
+job.batch/parsec-barnes condition met
+[2026-05-08 23:52:41] parsec-barnes completed successfully.
+[2026-05-08 23:52:41] Saving output to part2_b_results/barnes_2threads.txt
+[2026-05-08 23:52:42] Cleaning old job/pods for parsec-barnes...
+job.batch "parsec-barnes" deleted from default namespace
+[2026-05-08 23:52:42] Finished experiment: barnes with 2 thread(s)
+[2026-05-08 23:52:47] ========================================
+[2026-05-08 23:52:47] Starting experiment: barnes with 4 thread(s)
+[2026-05-08 23:52:47] ========================================
+[2026-05-08 23:52:47] Cleaning old job/pods for parsec-barnes...
+[2026-05-08 23:52:47] Creating temporary YAML with -n 4
+[2026-05-08 23:52:47] Launching job: parsec-barnes
+job.batch/parsec-barnes created
+[2026-05-08 23:52:47] Waiting for parsec-barnes to complete...
+job.batch/parsec-barnes condition met
+[2026-05-08 23:53:27] parsec-barnes completed successfully.
+[2026-05-08 23:53:28] Saving output to part2_b_results/barnes_4threads.txt
+[2026-05-08 23:53:28] Cleaning old job/pods for parsec-barnes...
+job.batch "parsec-barnes" deleted from default namespace
+[2026-05-08 23:53:28] Finished experiment: barnes with 4 thread(s)
+[2026-05-08 23:53:33] ========================================
+[2026-05-08 23:53:33] Starting experiment: barnes with 8 thread(s)
+[2026-05-08 23:53:33] ========================================
+[2026-05-08 23:53:33] Cleaning old job/pods for parsec-barnes...
+[2026-05-08 23:53:33] Creating temporary YAML with -n 8
+[2026-05-08 23:53:33] Launching job: parsec-barnes
+job.batch/parsec-barnes created
+[2026-05-08 23:53:33] Waiting for parsec-barnes to complete...
+job.batch/parsec-barnes condition met
+[2026-05-08 23:54:07] parsec-barnes completed successfully.
+[2026-05-08 23:54:07] Saving output to part2_b_results/barnes_8threads.txt
+[2026-05-08 23:54:07] Cleaning old job/pods for parsec-barnes...
+job.batch "parsec-barnes" deleted from default namespace
+[2026-05-08 23:54:07] Finished experiment: barnes with 8 thread(s)
+[2026-05-08 23:54:12] ========================================
+[2026-05-08 23:54:12] Starting experiment: blackscholes with 1 thread(s)
+[2026-05-08 23:54:12] ========================================
+[2026-05-08 23:54:12] Cleaning old job/pods for parsec-blackscholes...
+[2026-05-08 23:54:12] Creating temporary YAML with -n 1
+[2026-05-08 23:54:12] Launching job: parsec-blackscholes
+job.batch/parsec-blackscholes created
+[2026-05-08 23:54:12] Waiting for parsec-blackscholes to complete...
+job.batch/parsec-blackscholes condition met
+[2026-05-08 23:56:34] parsec-blackscholes completed successfully.
+[2026-05-08 23:56:34] Saving output to part2_b_results/blackscholes_1threads.txt
+[2026-05-08 23:56:34] Cleaning old job/pods for parsec-blackscholes...
+job.batch "parsec-blackscholes" deleted from default namespace
+[2026-05-08 23:56:34] Finished experiment: blackscholes with 1 thread(s)
+[2026-05-08 23:56:39] ========================================
+[2026-05-08 23:56:39] Starting experiment: blackscholes with 2 thread(s)
+[2026-05-08 23:56:39] ========================================
+[2026-05-08 23:56:39] Cleaning old job/pods for parsec-blackscholes...
+[2026-05-08 23:56:40] Creating temporary YAML with -n 2
+[2026-05-08 23:56:40] Launching job: parsec-blackscholes
+job.batch/parsec-blackscholes created
+[2026-05-08 23:56:40] Waiting for parsec-blackscholes to complete...
+job.batch/parsec-blackscholes condition met
+[2026-05-08 23:58:01] parsec-blackscholes completed successfully.
+[2026-05-08 23:58:01] Saving output to part2_b_results/blackscholes_2threads.txt
+[2026-05-08 23:58:01] Cleaning old job/pods for parsec-blackscholes...
+job.batch "parsec-blackscholes" deleted from default namespace
+[2026-05-08 23:58:02] Finished experiment: blackscholes with 2 thread(s)
+[2026-05-08 23:58:07] ========================================
+[2026-05-08 23:58:07] Starting experiment: blackscholes with 4 thread(s)
+[2026-05-08 23:58:07] ========================================
+[2026-05-08 23:58:07] Cleaning old job/pods for parsec-blackscholes...
+[2026-05-08 23:58:07] Creating temporary YAML with -n 4
+[2026-05-08 23:58:07] Launching job: parsec-blackscholes
+job.batch/parsec-blackscholes created
+[2026-05-08 23:58:07] Waiting for parsec-blackscholes to complete...
+job.batch/parsec-blackscholes condition met
+[2026-05-08 23:59:01] parsec-blackscholes completed successfully.
+[2026-05-08 23:59:01] Saving output to part2_b_results/blackscholes_4threads.txt
+[2026-05-08 23:59:01] Cleaning old job/pods for parsec-blackscholes...
+job.batch "parsec-blackscholes" deleted from default namespace
+[2026-05-08 23:59:02] Finished experiment: blackscholes with 4 thread(s)
+[2026-05-08 23:59:07] ========================================
+[2026-05-08 23:59:07] Starting experiment: blackscholes with 8 thread(s)
+[2026-05-08 23:59:07] ========================================
+[2026-05-08 23:59:07] Cleaning old job/pods for parsec-blackscholes...
+[2026-05-08 23:59:07] Creating temporary YAML with -n 8
+[2026-05-08 23:59:07] Launching job: parsec-blackscholes
+job.batch/parsec-blackscholes created
+[2026-05-08 23:59:07] Waiting for parsec-blackscholes to complete...
+job.batch/parsec-blackscholes condition met
+[2026-05-08 23:59:51] parsec-blackscholes completed successfully.
+[2026-05-08 23:59:51] Saving output to part2_b_results/blackscholes_8threads.txt
+[2026-05-08 23:59:52] Cleaning old job/pods for parsec-blackscholes...
+job.batch "parsec-blackscholes" deleted from default namespace
+[2026-05-08 23:59:52] Finished experiment: blackscholes with 8 thread(s)
+[2026-05-08 23:59:57] ========================================
+[2026-05-08 23:59:57] Starting experiment: canneal with 1 thread(s)
+[2026-05-08 23:59:57] ========================================
+[2026-05-08 23:59:57] Cleaning old job/pods for parsec-canneal...
+[2026-05-08 23:59:57] Creating temporary YAML with -n 1
+[2026-05-08 23:59:57] Launching job: parsec-canneal
+job.batch/parsec-canneal created
+[2026-05-08 23:59:57] Waiting for parsec-canneal to complete...
+job.batch/parsec-canneal condition met
+[2026-05-09 00:04:10] parsec-canneal completed successfully.
+[2026-05-09 00:04:10] Saving output to part2_b_results/canneal_1threads.txt
+[2026-05-09 00:04:10] Cleaning old job/pods for parsec-canneal...
+job.batch "parsec-canneal" deleted from default namespace
+[2026-05-09 00:04:10] Finished experiment: canneal with 1 thread(s)
+[2026-05-09 00:04:15] ========================================
+[2026-05-09 00:04:15] Starting experiment: canneal with 2 thread(s)
+[2026-05-09 00:04:15] ========================================
+[2026-05-09 00:04:15] Cleaning old job/pods for parsec-canneal...
+[2026-05-09 00:04:16] Creating temporary YAML with -n 2
+[2026-05-09 00:04:16] Launching job: parsec-canneal
+job.batch/parsec-canneal created
+[2026-05-09 00:04:16] Waiting for parsec-canneal to complete...
+job.batch/parsec-canneal condition met
+[2026-05-09 00:06:51] parsec-canneal completed successfully.
+[2026-05-09 00:06:51] Saving output to part2_b_results/canneal_2threads.txt
+[2026-05-09 00:06:51] Cleaning old job/pods for parsec-canneal...
+job.batch "parsec-canneal" deleted from default namespace
+[2026-05-09 00:06:52] Finished experiment: canneal with 2 thread(s)
+[2026-05-09 00:06:57] ========================================
+[2026-05-09 00:06:57] Starting experiment: canneal with 4 thread(s)
+[2026-05-09 00:06:57] ========================================
+[2026-05-09 00:06:57] Cleaning old job/pods for parsec-canneal...
+[2026-05-09 00:06:57] Creating temporary YAML with -n 4
+[2026-05-09 00:06:57] Launching job: parsec-canneal
+job.batch/parsec-canneal created
+[2026-05-09 00:06:57] Waiting for parsec-canneal to complete...
+job.batch/parsec-canneal condition met
+[2026-05-09 00:08:40] parsec-canneal completed successfully.
+[2026-05-09 00:08:41] Saving output to part2_b_results/canneal_4threads.txt
+[2026-05-09 00:08:41] Cleaning old job/pods for parsec-canneal...
+job.batch "parsec-canneal" deleted from default namespace
+[2026-05-09 00:08:41] Finished experiment: canneal with 4 thread(s)
+[2026-05-09 00:08:46] ========================================
+[2026-05-09 00:08:46] Starting experiment: canneal with 8 thread(s)
+[2026-05-09 00:08:46] ========================================
+[2026-05-09 00:08:46] Cleaning old job/pods for parsec-canneal...
+[2026-05-09 00:08:46] Creating temporary YAML with -n 8
+[2026-05-09 00:08:46] Launching job: parsec-canneal
+job.batch/parsec-canneal created
+[2026-05-09 00:08:46] Waiting for parsec-canneal to complete...
+job.batch/parsec-canneal condition met
+[2026-05-09 00:10:10] parsec-canneal completed successfully.
+[2026-05-09 00:10:10] Saving output to part2_b_results/canneal_8threads.txt
+[2026-05-09 00:10:10] Cleaning old job/pods for parsec-canneal...
+job.batch "parsec-canneal" deleted from default namespace
+[2026-05-09 00:10:10] Finished experiment: canneal with 8 thread(s)
+[2026-05-09 00:10:15] ========================================
+[2026-05-09 00:10:15] Starting experiment: freqmine with 1 thread(s)
+[2026-05-09 00:10:15] ========================================
+[2026-05-09 00:10:15] Cleaning old job/pods for parsec-freqmine...
+[2026-05-09 00:10:15] Creating temporary YAML with -n 1
+[2026-05-09 00:10:16] Launching job: parsec-freqmine
+job.batch/parsec-freqmine created
+[2026-05-09 00:10:16] Waiting for parsec-freqmine to complete...
+job.batch/parsec-freqmine condition met
+[2026-05-09 00:18:48] parsec-freqmine completed successfully.
+[2026-05-09 00:18:48] Saving output to part2_b_results/freqmine_1threads.txt
+[2026-05-09 00:18:48] Cleaning old job/pods for parsec-freqmine...
+job.batch "parsec-freqmine" deleted from default namespace
+[2026-05-09 00:18:48] Finished experiment: freqmine with 1 thread(s)
+[2026-05-09 00:18:53] ========================================
+[2026-05-09 00:18:53] Starting experiment: freqmine with 2 thread(s)
+[2026-05-09 00:18:53] ========================================
+[2026-05-09 00:18:53] Cleaning old job/pods for parsec-freqmine...
+[2026-05-09 00:18:54] Creating temporary YAML with -n 2
+[2026-05-09 00:18:54] Launching job: parsec-freqmine
+job.batch/parsec-freqmine created
+[2026-05-09 00:18:54] Waiting for parsec-freqmine to complete...
+job.batch/parsec-freqmine condition met
+[2026-05-09 00:23:12] parsec-freqmine completed successfully.
+[2026-05-09 00:23:12] Saving output to part2_b_results/freqmine_2threads.txt
+[2026-05-09 00:23:13] Cleaning old job/pods for parsec-freqmine...
+job.batch "parsec-freqmine" deleted from default namespace
+[2026-05-09 00:23:13] Finished experiment: freqmine with 2 thread(s)
+[2026-05-09 00:23:18] ========================================
+[2026-05-09 00:23:18] Starting experiment: freqmine with 4 thread(s)
+[2026-05-09 00:23:18] ========================================
+[2026-05-09 00:23:18] Cleaning old job/pods for parsec-freqmine...
+[2026-05-09 00:23:18] Creating temporary YAML with -n 4
+[2026-05-09 00:23:18] Launching job: parsec-freqmine
+job.batch/parsec-freqmine created
+[2026-05-09 00:23:18] Waiting for parsec-freqmine to complete...
+job.batch/parsec-freqmine condition met
+[2026-05-09 00:26:02] parsec-freqmine completed successfully.
+[2026-05-09 00:26:02] Saving output to part2_b_results/freqmine_4threads.txt
+[2026-05-09 00:26:02] Cleaning old job/pods for parsec-freqmine...
+job.batch "parsec-freqmine" deleted from default namespace
+[2026-05-09 00:26:02] Finished experiment: freqmine with 4 thread(s)
+[2026-05-09 00:26:07] ========================================
+[2026-05-09 00:26:07] Starting experiment: freqmine with 8 thread(s)
+[2026-05-09 00:26:07] ========================================
+[2026-05-09 00:26:07] Cleaning old job/pods for parsec-freqmine...
+[2026-05-09 00:26:07] Creating temporary YAML with -n 8
+[2026-05-09 00:26:07] Launching job: parsec-freqmine
+job.batch/parsec-freqmine created
+[2026-05-09 00:26:08] Waiting for parsec-freqmine to complete...
+job.batch/parsec-freqmine condition met
+[2026-05-09 00:27:58] parsec-freqmine completed successfully.
+[2026-05-09 00:27:58] Saving output to part2_b_results/freqmine_8threads.txt
+[2026-05-09 00:27:58] Cleaning old job/pods for parsec-freqmine...
+job.batch "parsec-freqmine" deleted from default namespace
+[2026-05-09 00:27:59] Finished experiment: freqmine with 8 thread(s)
+[2026-05-09 00:28:04] ========================================
+[2026-05-09 00:28:04] Starting experiment: radix with 1 thread(s)
+[2026-05-09 00:28:04] ========================================
+[2026-05-09 00:28:04] Cleaning old job/pods for parsec-radix...
+[2026-05-09 00:28:04] Creating temporary YAML with -n 1
+[2026-05-09 00:28:04] Launching job: parsec-radix
+job.batch/parsec-radix created
+[2026-05-09 00:28:04] Waiting for parsec-radix to complete...
+job.batch/parsec-radix condition met
+[2026-05-09 00:29:04] parsec-radix completed successfully.
+[2026-05-09 00:29:04] Saving output to part2_b_results/radix_1threads.txt
+[2026-05-09 00:29:04] Cleaning old job/pods for parsec-radix...
+job.batch "parsec-radix" deleted from default namespace
+[2026-05-09 00:29:05] Finished experiment: radix with 1 thread(s)
+[2026-05-09 00:29:10] ========================================
+[2026-05-09 00:29:10] Starting experiment: radix with 2 thread(s)
+[2026-05-09 00:29:10] ========================================
+[2026-05-09 00:29:10] Cleaning old job/pods for parsec-radix...
+[2026-05-09 00:29:10] Creating temporary YAML with -n 2
+[2026-05-09 00:29:10] Launching job: parsec-radix
+job.batch/parsec-radix created
+[2026-05-09 00:29:10] Waiting for parsec-radix to complete...
+job.batch/parsec-radix condition met
+[2026-05-09 00:29:42] parsec-radix completed successfully.
+[2026-05-09 00:29:42] Saving output to part2_b_results/radix_2threads.txt
+[2026-05-09 00:29:43] Cleaning old job/pods for parsec-radix...
+job.batch "parsec-radix" deleted from default namespace
+[2026-05-09 00:29:43] Finished experiment: radix with 2 thread(s)
+[2026-05-09 00:29:48] ========================================
+[2026-05-09 00:29:48] Starting experiment: radix with 4 thread(s)
+[2026-05-09 00:29:48] ========================================
+[2026-05-09 00:29:48] Cleaning old job/pods for parsec-radix...
+[2026-05-09 00:29:48] Creating temporary YAML with -n 4
+[2026-05-09 00:29:48] Launching job: parsec-radix
+job.batch/parsec-radix created
+[2026-05-09 00:29:48] Waiting for parsec-radix to complete...
+job.batch/parsec-radix condition met
+[2026-05-09 00:30:06] parsec-radix completed successfully.
+[2026-05-09 00:30:06] Saving output to part2_b_results/radix_4threads.txt
+[2026-05-09 00:30:07] Cleaning old job/pods for parsec-radix...
+job.batch "parsec-radix" deleted from default namespace
+[2026-05-09 00:30:07] Finished experiment: radix with 4 thread(s)
+[2026-05-09 00:30:12] ========================================
+[2026-05-09 00:30:12] Starting experiment: radix with 8 thread(s)
+[2026-05-09 00:30:12] ========================================
+[2026-05-09 00:30:12] Cleaning old job/pods for parsec-radix...
+[2026-05-09 00:30:12] Creating temporary YAML with -n 8
+[2026-05-09 00:30:12] Launching job: parsec-radix
+job.batch/parsec-radix created
+[2026-05-09 00:30:12] Waiting for parsec-radix to complete...
+job.batch/parsec-radix condition met
+[2026-05-09 00:30:25] parsec-radix completed successfully.
+[2026-05-09 00:30:26] Saving output to part2_b_results/radix_8threads.txt
+[2026-05-09 00:30:26] Cleaning old job/pods for parsec-radix...
+job.batch "parsec-radix" deleted from default namespace
+[2026-05-09 00:30:26] Finished experiment: radix with 8 thread(s)
+[2026-05-09 00:30:31] ========================================
+[2026-05-09 00:30:31] Starting experiment: streamcluster with 1 thread(s)
+[2026-05-09 00:30:31] ========================================
+[2026-05-09 00:30:31] Cleaning old job/pods for parsec-streamcluster...
+[2026-05-09 00:30:31] Creating temporary YAML with -n 1
+[2026-05-09 00:30:31] Launching job: parsec-streamcluster
+job.batch/parsec-streamcluster created
+[2026-05-09 00:30:31] Waiting for parsec-streamcluster to complete...
+job.batch/parsec-streamcluster condition met
+[2026-05-09 00:40:45] parsec-streamcluster completed successfully.
+[2026-05-09 00:40:45] Saving output to part2_b_results/streamcluster_1threads.txt
+[2026-05-09 00:40:45] Cleaning old job/pods for parsec-streamcluster...
+job.batch "parsec-streamcluster" deleted from default namespace
+[2026-05-09 00:40:45] Finished experiment: streamcluster with 1 thread(s)
+[2026-05-09 00:40:50] ========================================
+[2026-05-09 00:40:50] Starting experiment: streamcluster with 2 thread(s)
+[2026-05-09 00:40:50] ========================================
+[2026-05-09 00:40:50] Cleaning old job/pods for parsec-streamcluster...
+[2026-05-09 00:40:50] Creating temporary YAML with -n 2
+[2026-05-09 00:40:50] Launching job: parsec-streamcluster
+job.batch/parsec-streamcluster created
+[2026-05-09 00:40:51] Waiting for parsec-streamcluster to complete...
+job.batch/parsec-streamcluster condition met
+[2026-05-09 00:46:01] parsec-streamcluster completed successfully.
+[2026-05-09 00:46:02] Saving output to part2_b_results/streamcluster_2threads.txt
+[2026-05-09 00:46:02] Cleaning old job/pods for parsec-streamcluster...
+job.batch "parsec-streamcluster" deleted from default namespace
+[2026-05-09 00:46:02] Finished experiment: streamcluster with 2 thread(s)
+[2026-05-09 00:46:07] ========================================
+[2026-05-09 00:46:07] Starting experiment: streamcluster with 4 thread(s)
+[2026-05-09 00:46:07] ========================================
+[2026-05-09 00:46:07] Cleaning old job/pods for parsec-streamcluster...
+[2026-05-09 00:46:07] Creating temporary YAML with -n 4
+[2026-05-09 00:46:07] Launching job: parsec-streamcluster
+job.batch/parsec-streamcluster created
+[2026-05-09 00:46:07] Waiting for parsec-streamcluster to complete...
+job.batch/parsec-streamcluster condition met
+[2026-05-09 00:48:53] parsec-streamcluster completed successfully.
+[2026-05-09 00:48:53] Saving output to part2_b_results/streamcluster_4threads.txt
+[2026-05-09 00:48:53] Cleaning old job/pods for parsec-streamcluster...
+job.batch "parsec-streamcluster" deleted from default namespace
+[2026-05-09 00:48:53] Finished experiment: streamcluster with 4 thread(s)
+[2026-05-09 00:48:58] ========================================
+[2026-05-09 00:48:58] Starting experiment: streamcluster with 8 thread(s)
+[2026-05-09 00:48:58] ========================================
+[2026-05-09 00:48:58] Cleaning old job/pods for parsec-streamcluster...
+[2026-05-09 00:48:58] Creating temporary YAML with -n 8
+[2026-05-09 00:48:58] Launching job: parsec-streamcluster
+job.batch/parsec-streamcluster created
+[2026-05-09 00:48:59] Waiting for parsec-streamcluster to complete...
+job.batch/parsec-streamcluster condition met
+[2026-05-09 00:50:48] parsec-streamcluster completed successfully.
+[2026-05-09 00:50:48] Saving output to part2_b_results/streamcluster_8threads.txt
+[2026-05-09 00:50:48] Cleaning old job/pods for parsec-streamcluster...
+job.batch "parsec-streamcluster" deleted from default namespace
+[2026-05-09 00:50:49] Finished experiment: streamcluster with 8 thread(s)
+[2026-05-09 00:50:54] ========================================
+[2026-05-09 00:50:54] Starting experiment: vips with 1 thread(s)
+[2026-05-09 00:50:54] ========================================
+[2026-05-09 00:50:54] Cleaning old job/pods for parsec-vips...
+[2026-05-09 00:50:54] Creating temporary YAML with -n 1
+[2026-05-09 00:50:54] Launching job: parsec-vips
+job.batch/parsec-vips created
+[2026-05-09 00:50:54] Waiting for parsec-vips to complete...
+job.batch/parsec-vips condition met
+[2026-05-09 00:53:18] parsec-vips completed successfully.
+[2026-05-09 00:53:19] Saving output to part2_b_results/vips_1threads.txt
+[2026-05-09 00:53:19] Cleaning old job/pods for parsec-vips...
+job.batch "parsec-vips" deleted from default namespace
+[2026-05-09 00:53:19] Finished experiment: vips with 1 thread(s)
+[2026-05-09 00:53:24] ========================================
+[2026-05-09 00:53:24] Starting experiment: vips with 2 thread(s)
+[2026-05-09 00:53:24] ========================================
+[2026-05-09 00:53:24] Cleaning old job/pods for parsec-vips...
+[2026-05-09 00:53:24] Creating temporary YAML with -n 2
+[2026-05-09 00:53:24] Launching job: parsec-vips
+job.batch/parsec-vips created
+[2026-05-09 00:53:24] Waiting for parsec-vips to complete...
+job.batch/parsec-vips condition met
+[2026-05-09 00:54:50] parsec-vips completed successfully.
+[2026-05-09 00:54:50] Saving output to part2_b_results/vips_2threads.txt
+[2026-05-09 00:54:50] Cleaning old job/pods for parsec-vips...
+job.batch "parsec-vips" deleted from default namespace
+[2026-05-09 00:54:50] Finished experiment: vips with 2 thread(s)
+[2026-05-09 00:54:55] ========================================
+[2026-05-09 00:54:55] Starting experiment: vips with 4 thread(s)
+[2026-05-09 00:54:55] ========================================
+[2026-05-09 00:54:55] Cleaning old job/pods for parsec-vips...
+[2026-05-09 00:54:55] Creating temporary YAML with -n 4
+[2026-05-09 00:54:55] Launching job: parsec-vips
+job.batch/parsec-vips created
+[2026-05-09 00:54:56] Waiting for parsec-vips to complete...
+job.batch/parsec-vips condition met
+[2026-05-09 00:55:44] parsec-vips completed successfully.
+[2026-05-09 00:55:44] Saving output to part2_b_results/vips_4threads.txt
+[2026-05-09 00:55:44] Cleaning old job/pods for parsec-vips...
+job.batch "parsec-vips" deleted from default namespace
+[2026-05-09 00:55:44] Finished experiment: vips with 4 thread(s)
+[2026-05-09 00:55:49] ========================================
+[2026-05-09 00:55:49] Starting experiment: vips with 8 thread(s)
+[2026-05-09 00:55:49] ========================================
+[2026-05-09 00:55:49] Cleaning old job/pods for parsec-vips...
+[2026-05-09 00:55:50] Creating temporary YAML with -n 8
+[2026-05-09 00:55:50] Launching job: parsec-vips
+job.batch/parsec-vips created
+[2026-05-09 00:55:50] Waiting for parsec-vips to complete...
+job.batch/parsec-vips condition met
+[2026-05-09 00:56:27] parsec-vips completed successfully.
+[2026-05-09 00:56:27] Saving output to part2_b_results/vips_8threads.txt
+[2026-05-09 00:56:27] Cleaning old job/pods for parsec-vips...
+job.batch "parsec-vips" deleted from default namespace
+[2026-05-09 00:56:27] Finished experiment: vips with 8 thread(s)
+[2026-05-09 00:56:32] All Part 2b experiments completed.
