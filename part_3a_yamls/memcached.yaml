@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: some-memcached
+  labels:
+    app: some-memcached
+
+spec:
+  nodeSelector:
+    cca-project-nodetype: "node-b-4core"
+
+  containers:
+  - name: memcached
+    image: memcached:1.6.38
+    command: ["/bin/sh"]
+    args:
+      [
+        "-c",
+        "taskset -c 0-1 memcached -m 1024 -t 2 -u memcache -l 0.0.0.0 -p 11211"
+      ]
+
+    ports:
+    - containerPort: 11211
+      name: memcache
+
+  restartPolicy: Always

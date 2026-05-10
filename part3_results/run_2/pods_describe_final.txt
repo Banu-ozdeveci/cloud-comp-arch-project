@@ -1,0 +1,534 @@
+Name:             parsec-barnes-sbr2z
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             node-a-8core-t4w3/10.0.16.9
+Start Time:       Sun, 10 May 2026 04:38:38 +0200
+Labels:           batch.kubernetes.io/controller-uid=33daabd2-b89e-4586-874a-5cf01797ffea
+                  batch.kubernetes.io/job-name=parsec-barnes
+                  controller-uid=33daabd2-b89e-4586-874a-5cf01797ffea
+                  job-name=parsec-barnes
+Annotations:      kubernetes.io/limit-ranger: LimitRanger plugin set: cpu request for container parsec-barnes
+Status:           Succeeded
+IP:               100.96.3.24
+IPs:
+  IP:           100.96.3.24
+Controlled By:  Job/parsec-barnes
+Containers:
+  parsec-barnes:
+    Container ID:  containerd://9951cee27851af34958e5d6608164a6bbe3ae051440736f36356cb7dff55ddcc
+    Image:         anakli/cca:splash2x_barnes
+    Image ID:      docker.io/anakli/cca@sha256:0f288c38563519b2c2d23b3ec860e3e1f94e10d1598a264d191fac6fe4348bdb
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      /bin/sh
+    Args:
+      -c
+      taskset -c 4-7 ./run -a run -S splash2x -p barnes -i native -n 4
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Sun, 10 May 2026 04:38:39 +0200
+      Finished:     Sun, 10 May 2026 04:39:36 +0200
+    Ready:          False
+    Restart Count:  0
+    Requests:
+      cpu:        100m
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-9zsls (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   False 
+  Initialized                 True 
+  Ready                       False 
+  ContainersReady             False 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-9zsls:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              cca-project-nodetype=node-a-8core
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  2m1s  default-scheduler  Successfully assigned default/parsec-barnes-sbr2z to node-a-8core-t4w3
+  Normal  Pulling    2m1s  kubelet            spec.containers{parsec-barnes}: Pulling image "anakli/cca:splash2x_barnes"
+  Normal  Pulled     2m    kubelet            spec.containers{parsec-barnes}: Successfully pulled image "anakli/cca:splash2x_barnes" in 568ms (568ms including waiting). Image size: 34527819 bytes.
+  Normal  Created    2m    kubelet            spec.containers{parsec-barnes}: Created container parsec-barnes
+  Normal  Started    2m    kubelet            spec.containers{parsec-barnes}: Started container parsec-barnes
+
+
+Name:             parsec-blackscholes-lkxdd
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             node-b-4core-rkqx/10.0.16.10
+Start Time:       Sun, 10 May 2026 04:36:34 +0200
+Labels:           batch.kubernetes.io/controller-uid=006b17ca-0222-4925-aed3-b85aeebc224d
+                  batch.kubernetes.io/job-name=parsec-blackscholes
+                  controller-uid=006b17ca-0222-4925-aed3-b85aeebc224d
+                  job-name=parsec-blackscholes
+Annotations:      kubernetes.io/limit-ranger: LimitRanger plugin set: cpu request for container parsec-blackscholes
+Status:           Succeeded
+IP:               100.96.2.27
+IPs:
+  IP:           100.96.2.27
+Controlled By:  Job/parsec-blackscholes
+Containers:
+  parsec-blackscholes:
+    Container ID:  containerd://313710449b005b28d3d488a460e16dbf1202528c1a694fb8164756b2865c06b3
+    Image:         anakli/cca:parsec_blackscholes
+    Image ID:      docker.io/anakli/cca@sha256:7a46dab25dbb692c7c9eaa7a6bf5edeb220e3209b2460a18d05be40533849dc3
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      /bin/sh
+    Args:
+      -c
+      taskset -c 3 ./run -a run -S parsec -p blackscholes -i native -n 1
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Sun, 10 May 2026 04:36:36 +0200
+      Finished:     Sun, 10 May 2026 04:38:10 +0200
+    Ready:          False
+    Restart Count:  0
+    Requests:
+      cpu:        100m
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-cclqg (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   False 
+  Initialized                 True 
+  Ready                       False 
+  ContainersReady             False 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-cclqg:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              cca-project-nodetype=node-b-4core
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  4m5s  default-scheduler  Successfully assigned default/parsec-blackscholes-lkxdd to node-b-4core-rkqx
+  Normal  Pulling    4m4s  kubelet            spec.containers{parsec-blackscholes}: Pulling image "anakli/cca:parsec_blackscholes"
+  Normal  Pulled     4m4s  kubelet            spec.containers{parsec-blackscholes}: Successfully pulled image "anakli/cca:parsec_blackscholes" in 534ms (534ms including waiting). Image size: 153652038 bytes.
+  Normal  Created    4m3s  kubelet            spec.containers{parsec-blackscholes}: Created container parsec-blackscholes
+  Normal  Started    4m3s  kubelet            spec.containers{parsec-blackscholes}: Started container parsec-blackscholes
+
+
+Name:             parsec-canneal-lp4hl
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             node-b-4core-rkqx/10.0.16.10
+Start Time:       Sun, 10 May 2026 04:38:15 +0200
+Labels:           batch.kubernetes.io/controller-uid=0644816e-15c5-45bf-a160-95756ad8fcdd
+                  batch.kubernetes.io/job-name=parsec-canneal
+                  controller-uid=0644816e-15c5-45bf-a160-95756ad8fcdd
+                  job-name=parsec-canneal
+Annotations:      kubernetes.io/limit-ranger: LimitRanger plugin set: cpu request for container parsec-canneal
+Status:           Succeeded
+IP:               100.96.2.28
+IPs:
+  IP:           100.96.2.28
+Controlled By:  Job/parsec-canneal
+Containers:
+  parsec-canneal:
+    Container ID:  containerd://90d98c5041a878f603fa1d57f507068ca26ef1bbb00b5297fbf74a0dbf7ddb05
+    Image:         anakli/cca:parsec_canneal
+    Image ID:      docker.io/anakli/cca@sha256:cb8c3ea7a7071c7802b84179c36f52673ee099bbc2efd90149611285fec24367
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      /bin/sh
+    Args:
+      -c
+      taskset -c 2-3 ./run -a run -S parsec -p canneal -i native -n 2
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Sun, 10 May 2026 04:38:16 +0200
+      Finished:     Sun, 10 May 2026 04:40:35 +0200
+    Ready:          False
+    Restart Count:  0
+    Requests:
+      cpu:        100m
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-65skl (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   False 
+  Initialized                 True 
+  Ready                       False 
+  ContainersReady             False 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-65skl:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              cca-project-nodetype=node-b-4core
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age    From               Message
+  ----    ------     ----   ----               -------
+  Normal  Scheduled  2m25s  default-scheduler  Successfully assigned default/parsec-canneal-lp4hl to node-b-4core-rkqx
+  Normal  Pulling    2m24s  kubelet            spec.containers{parsec-canneal}: Pulling image "anakli/cca:parsec_canneal"
+  Normal  Pulled     2m24s  kubelet            spec.containers{parsec-canneal}: Successfully pulled image "anakli/cca:parsec_canneal" in 554ms (555ms including waiting). Image size: 99173306 bytes.
+  Normal  Created    2m24s  kubelet            spec.containers{parsec-canneal}: Created container parsec-canneal
+  Normal  Started    2m24s  kubelet            spec.containers{parsec-canneal}: Started container parsec-canneal
+
+
+Name:             parsec-freqmine-dw4q7
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             node-a-8core-t4w3/10.0.16.9
+Start Time:       Sun, 10 May 2026 04:36:34 +0200
+Labels:           batch.kubernetes.io/controller-uid=c8402b06-749d-4e31-b664-2b4ce47d35a7
+                  batch.kubernetes.io/job-name=parsec-freqmine
+                  controller-uid=c8402b06-749d-4e31-b664-2b4ce47d35a7
+                  job-name=parsec-freqmine
+Annotations:      kubernetes.io/limit-ranger: LimitRanger plugin set: cpu request for container parsec-freqmine
+Status:           Succeeded
+IP:               100.96.3.22
+IPs:
+  IP:           100.96.3.22
+Controlled By:  Job/parsec-freqmine
+Containers:
+  parsec-freqmine:
+    Container ID:  containerd://fd200cb6ec06bd6938403e2e1ac3211f40ba3d626b4d962d21e092fe374378fe
+    Image:         anakli/cca:parsec_freqmine
+    Image ID:      docker.io/anakli/cca@sha256:c2a2f85fe345a655e84a629f04a1ca30482b9c0dd658bed193ed1d70a6395e5a
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      /bin/sh
+    Args:
+      -c
+      taskset -c 0-3 ./run -a run -S parsec -p freqmine -i native -n 4
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Sun, 10 May 2026 04:36:36 +0200
+      Finished:     Sun, 10 May 2026 04:38:34 +0200
+    Ready:          False
+    Restart Count:  0
+    Requests:
+      cpu:        100m
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-qjr47 (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   False 
+  Initialized                 True 
+  Ready                       False 
+  ContainersReady             False 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-qjr47:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              cca-project-nodetype=node-a-8core
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  4m6s  default-scheduler  Successfully assigned default/parsec-freqmine-dw4q7 to node-a-8core-t4w3
+  Normal  Pulling    4m5s  kubelet            spec.containers{parsec-freqmine}: Pulling image "anakli/cca:parsec_freqmine"
+  Normal  Pulled     4m4s  kubelet            spec.containers{parsec-freqmine}: Successfully pulled image "anakli/cca:parsec_freqmine" in 570ms (570ms including waiting). Image size: 159516230 bytes.
+  Normal  Created    4m4s  kubelet            spec.containers{parsec-freqmine}: Created container parsec-freqmine
+  Normal  Started    4m4s  kubelet            spec.containers{parsec-freqmine}: Started container parsec-freqmine
+
+
+Name:             parsec-radix-w5tvv
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             node-a-8core-t4w3/10.0.16.9
+Start Time:       Sun, 10 May 2026 04:39:39 +0200
+Labels:           batch.kubernetes.io/controller-uid=bee9b7fb-4317-4510-9632-62752353ef63
+                  batch.kubernetes.io/job-name=parsec-radix
+                  controller-uid=bee9b7fb-4317-4510-9632-62752353ef63
+                  job-name=parsec-radix
+Annotations:      kubernetes.io/limit-ranger: LimitRanger plugin set: cpu request for container parsec-radix
+Status:           Succeeded
+IP:               100.96.3.25
+IPs:
+  IP:           100.96.3.25
+Controlled By:  Job/parsec-radix
+Containers:
+  parsec-radix:
+    Container ID:  containerd://ae15ae8ca41b0a68d508a661be804dbb037b7707fa6167cbbb405acd06be85f4
+    Image:         anakli/cca:splash2x_radix
+    Image ID:      docker.io/anakli/cca@sha256:dbf0e10e749cf6544504ec0c90a206b8fcdc7fced6c23df536f5857f3f0ed319
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      /bin/sh
+    Args:
+      -c
+      taskset -c 0-3 ./run -a run -S splash2x -p radix -i native -n 4
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Sun, 10 May 2026 04:39:40 +0200
+      Finished:     Sun, 10 May 2026 04:40:00 +0200
+    Ready:          False
+    Restart Count:  0
+    Requests:
+      cpu:        100m
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-twdcb (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   False 
+  Initialized                 True 
+  Ready                       False 
+  ContainersReady             False 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-twdcb:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              cca-project-nodetype=node-a-8core
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  61s   default-scheduler  Successfully assigned default/parsec-radix-w5tvv to node-a-8core-t4w3
+  Normal  Pulling    61s   kubelet            spec.containers{parsec-radix}: Pulling image "anakli/cca:splash2x_radix"
+  Normal  Pulled     60s   kubelet            spec.containers{parsec-radix}: Successfully pulled image "anakli/cca:splash2x_radix" in 573ms (573ms including waiting). Image size: 34384214 bytes.
+  Normal  Created    60s   kubelet            spec.containers{parsec-radix}: Created container parsec-radix
+  Normal  Started    60s   kubelet            spec.containers{parsec-radix}: Started container parsec-radix
+
+
+Name:             parsec-streamcluster-qngnv
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             node-a-8core-t4w3/10.0.16.9
+Start Time:       Sun, 10 May 2026 04:36:37 +0200
+Labels:           batch.kubernetes.io/controller-uid=f2e28e42-f616-4aa3-b637-fb65655f56b6
+                  batch.kubernetes.io/job-name=parsec-streamcluster
+                  controller-uid=f2e28e42-f616-4aa3-b637-fb65655f56b6
+                  job-name=parsec-streamcluster
+Annotations:      kubernetes.io/limit-ranger: LimitRanger plugin set: cpu request for container parsec-streamcluster
+Status:           Succeeded
+IP:               100.96.3.23
+IPs:
+  IP:           100.96.3.23
+Controlled By:  Job/parsec-streamcluster
+Containers:
+  parsec-streamcluster:
+    Container ID:  containerd://3e28e75ec9c419718301eff09e11b474409425408a5327ea9b1354987f1f4a71
+    Image:         anakli/cca:parsec_streamcluster
+    Image ID:      docker.io/anakli/cca@sha256:7dac4c901e06198d999f1172eae9622ab7042064caadb32cc7b9fffa6d5f7402
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      /bin/sh
+    Args:
+      -c
+      taskset -c 4-7 ./run -a run -S parsec -p streamcluster -i native -n 4
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Sun, 10 May 2026 04:36:38 +0200
+      Finished:     Sun, 10 May 2026 04:39:45 +0200
+    Ready:          False
+    Restart Count:  0
+    Requests:
+      cpu:        100m
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-rbhfm (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   False 
+  Initialized                 True 
+  Ready                       False 
+  ContainersReady             False 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-rbhfm:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              cca-project-nodetype=node-a-8core
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  4m3s  default-scheduler  Successfully assigned default/parsec-streamcluster-qngnv to node-a-8core-t4w3
+  Normal  Pulling    4m3s  kubelet            spec.containers{parsec-streamcluster}: Pulling image "anakli/cca:parsec_streamcluster"
+  Normal  Pulled     4m2s  kubelet            spec.containers{parsec-streamcluster}: Successfully pulled image "anakli/cca:parsec_streamcluster" in 556ms (556ms including waiting). Image size: 34585790 bytes.
+  Normal  Created    4m2s  kubelet            spec.containers{parsec-streamcluster}: Created container parsec-streamcluster
+  Normal  Started    4m2s  kubelet            spec.containers{parsec-streamcluster}: Started container parsec-streamcluster
+
+
+Name:             parsec-vips-z6gjr
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             node-a-8core-t4w3/10.0.16.9
+Start Time:       Sun, 10 May 2026 04:39:48 +0200
+Labels:           batch.kubernetes.io/controller-uid=49a5e76d-7bc8-482b-bbdd-9241894b9cde
+                  batch.kubernetes.io/job-name=parsec-vips
+                  controller-uid=49a5e76d-7bc8-482b-bbdd-9241894b9cde
+                  job-name=parsec-vips
+Annotations:      kubernetes.io/limit-ranger: LimitRanger plugin set: cpu request for container parsec-vips
+Status:           Succeeded
+IP:               100.96.3.26
+IPs:
+  IP:           100.96.3.26
+Controlled By:  Job/parsec-vips
+Containers:
+  parsec-vips:
+    Container ID:  containerd://efea98cefcfe3ee3a418f17ce03f42022126d7e0952f0f2ed71a7c1b5548b4dc
+    Image:         anakli/cca:parsec_vips
+    Image ID:      docker.io/anakli/cca@sha256:5c719838bc3d4d72143f27ca60bb5fe6f5f5b60be53b3972e73350596aa03547
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      /bin/sh
+    Args:
+      -c
+      taskset -c 0-3 ./run -a run -S parsec -p vips -i native -n 4
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Sun, 10 May 2026 04:39:49 +0200
+      Finished:     Sun, 10 May 2026 04:40:19 +0200
+    Ready:          False
+    Restart Count:  0
+    Requests:
+      cpu:        100m
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-9fnwt (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   False 
+  Initialized                 True 
+  Ready                       False 
+  ContainersReady             False 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-9fnwt:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              cca-project-nodetype=node-a-8core
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  52s   default-scheduler  Successfully assigned default/parsec-vips-z6gjr to node-a-8core-t4w3
+  Normal  Pulling    52s   kubelet            spec.containers{parsec-vips}: Pulling image "anakli/cca:parsec_vips"
+  Normal  Pulled     51s   kubelet            spec.containers{parsec-vips}: Successfully pulled image "anakli/cca:parsec_vips" in 545ms (545ms including waiting). Image size: 909672474 bytes.
+  Normal  Created    51s   kubelet            spec.containers{parsec-vips}: Created container parsec-vips
+  Normal  Started    51s   kubelet            spec.containers{parsec-vips}: Started container parsec-vips
+
+
+Name:             some-memcached
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             node-b-4core-rkqx/10.0.16.10
+Start Time:       Sun, 10 May 2026 04:35:03 +0200
+Labels:           app=some-memcached
+Annotations:      kubernetes.io/limit-ranger: LimitRanger plugin set: cpu request for container memcached
+Status:           Running
+IP:               100.96.2.26
+IPs:
+  IP:  100.96.2.26
+Containers:
+  memcached:
+    Container ID:  containerd://7afcbf4abaacbee18dc1b4fc20c68c7414e002926b9041894fab33f2b19b124c
+    Image:         memcached:1.6.38
+    Image ID:      docker.io/library/memcached@sha256:768b8b14b264b87cdde0d4bc0e800c332b8563ce19fd15ce98945c4441b98146
+    Port:          11211/TCP (memcache)
+    Host Port:     0/TCP (memcache)
+    Command:
+      /bin/sh
+    Args:
+      -c
+      taskset -c 0-1 memcached -m 1024 -t 2 -u memcache -l 0.0.0.0 -p 11211
+    State:          Running
+      Started:      Sun, 10 May 2026 04:35:04 +0200
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:        100m
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-l7qwf (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-l7qwf:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              cca-project-nodetype=node-b-4core
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age    From               Message
+  ----    ------     ----   ----               -------
+  Normal  Scheduled  5m37s  default-scheduler  Successfully assigned default/some-memcached to node-b-4core-rkqx
+  Normal  Pulled     5m36s  kubelet            spec.containers{memcached}: Container image "memcached:1.6.38" already present on machine
+  Normal  Created    5m36s  kubelet            spec.containers{memcached}: Created container memcached
+  Normal  Started    5m36s  kubelet            spec.containers{memcached}: Started container memcached

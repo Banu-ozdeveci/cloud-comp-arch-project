@@ -1,0 +1,182 @@
+LAST SEEN   TYPE      REASON                 OBJECT                           MESSAGE
+58m         Normal    SuccessfulCreate       job/parsec-radix                 Created pod: parsec-radix-7tcrj
+58m         Normal    Scheduled              pod/parsec-radix-7tcrj           Successfully assigned default/parsec-radix-7tcrj to node-b-4core-rkqx
+58m         Normal    Started                pod/parsec-radix-7tcrj           Started container parsec-radix
+58m         Normal    Created                pod/parsec-radix-7tcrj           Created container parsec-radix
+58m         Normal    Pulled                 pod/parsec-radix-7tcrj           Successfully pulled image "anakli/cca:splash2x_radix" in 691ms (691ms including waiting). Image size: 34384214 bytes.
+58m         Normal    Pulling                pod/parsec-radix-7tcrj           Pulling image "anakli/cca:splash2x_radix"
+58m         Warning   SystemOOM              node/node-b-4core-rkqx           System OOM encountered, victim process: radix, pid: 13019
+57m         Normal    Killing                pod/some-memcached               Stopping container memcached
+56m         Normal    DeletingLoadBalancer   service/some-memcached-11211     Deleting load balancer
+56m         Normal    DeletedLoadBalancer    service/some-memcached-11211     Deleted load balancer
+55m         Normal    Scheduled              pod/some-memcached               Successfully assigned default/some-memcached to node-b-4core-rkqx
+55m         Normal    Started                pod/some-memcached               Started container memcached
+55m         Normal    Pulled                 pod/some-memcached               Container image "memcached:1.6.38" already present on machine
+55m         Normal    Created                pod/some-memcached               Created container memcached
+55m         Normal    EnsuringLoadBalancer   service/some-memcached-11211     Ensuring load balancer
+54m         Normal    EnsuredLoadBalancer    service/some-memcached-11211     Ensured load balancer
+52m         Normal    SuccessfulCreate       job/parsec-freqmine              Created pod: parsec-freqmine-dnpjx
+52m         Normal    SuccessfulCreate       job/parsec-blackscholes          Created pod: parsec-blackscholes-jc67w
+52m         Normal    Scheduled              pod/parsec-freqmine-dnpjx        Successfully assigned default/parsec-freqmine-dnpjx to node-a-8core-t4w3
+52m         Normal    Scheduled              pod/parsec-blackscholes-jc67w    Successfully assigned default/parsec-blackscholes-jc67w to node-b-4core-rkqx
+52m         Normal    Created                pod/parsec-freqmine-dnpjx        Created container parsec-freqmine
+52m         Normal    Pulling                pod/parsec-blackscholes-jc67w    Pulling image "anakli/cca:parsec_blackscholes"
+52m         Normal    Pulling                pod/parsec-freqmine-dnpjx        Pulling image "anakli/cca:parsec_freqmine"
+52m         Normal    Pulled                 pod/parsec-freqmine-dnpjx        Successfully pulled image "anakli/cca:parsec_freqmine" in 599ms (599ms including waiting). Image size: 159516230 bytes.
+52m         Normal    Started                pod/parsec-freqmine-dnpjx        Started container parsec-freqmine
+52m         Normal    SuccessfulCreate       job/parsec-streamcluster         Created pod: parsec-streamcluster-4qxd8
+52m         Normal    Pulling                pod/parsec-streamcluster-4qxd8   Pulling image "anakli/cca:parsec_streamcluster"
+52m         Normal    Scheduled              pod/parsec-streamcluster-4qxd8   Successfully assigned default/parsec-streamcluster-4qxd8 to node-a-8core-t4w3
+52m         Normal    Started                pod/parsec-streamcluster-4qxd8   Started container parsec-streamcluster
+52m         Normal    Pulled                 pod/parsec-streamcluster-4qxd8   Successfully pulled image "anakli/cca:parsec_streamcluster" in 541ms (541ms including waiting). Image size: 34585790 bytes.
+52m         Normal    Created                pod/parsec-streamcluster-4qxd8   Created container parsec-streamcluster
+52m         Normal    Pulled                 pod/parsec-blackscholes-jc67w    Successfully pulled image "anakli/cca:parsec_blackscholes" in 6.76s (6.76s including waiting). Image size: 153652038 bytes.
+52m         Normal    Created                pod/parsec-blackscholes-jc67w    Created container parsec-blackscholes
+52m         Normal    Started                pod/parsec-blackscholes-jc67w    Started container parsec-blackscholes
+51m         Normal    Completed              job/parsec-blackscholes          Job completed
+50m         Normal    Completed              job/parsec-freqmine              Job completed
+50m         Normal    Scheduled              pod/parsec-canneal-8cs6j         Successfully assigned default/parsec-canneal-8cs6j to node-a-8core-t4w3
+50m         Normal    Pulling                pod/parsec-canneal-8cs6j         Pulling image "anakli/cca:parsec_canneal"
+50m         Normal    SuccessfulCreate       job/parsec-canneal               Created pod: parsec-canneal-8cs6j
+50m         Normal    Started                pod/parsec-canneal-8cs6j         Started container parsec-canneal
+50m         Normal    Pulled                 pod/parsec-canneal-8cs6j         Successfully pulled image "anakli/cca:parsec_canneal" in 555ms (555ms including waiting). Image size: 99173306 bytes.
+50m         Normal    Created                pod/parsec-canneal-8cs6j         Created container parsec-canneal
+50m         Normal    Completed              job/parsec-streamcluster         Job completed
+50m         Normal    Scheduled              pod/parsec-barnes-6tsjz          Successfully assigned default/parsec-barnes-6tsjz to node-a-8core-t4w3
+50m         Normal    SuccessfulCreate       job/parsec-barnes                Created pod: parsec-barnes-6tsjz
+50m         Normal    Pulling                pod/parsec-barnes-6tsjz          Pulling image "anakli/cca:splash2x_barnes"
+50m         Normal    Created                pod/parsec-barnes-6tsjz          Created container parsec-barnes
+50m         Normal    Pulled                 pod/parsec-barnes-6tsjz          Successfully pulled image "anakli/cca:splash2x_barnes" in 555ms (555ms including waiting). Image size: 34527819 bytes.
+50m         Normal    Started                pod/parsec-barnes-6tsjz          Started container parsec-barnes
+49m         Normal    Scheduled              pod/parsec-radix-czr78           Successfully assigned default/parsec-radix-czr78 to node-a-8core-t4w3
+49m         Normal    Completed              job/parsec-barnes                Job completed
+49m         Normal    Pulling                pod/parsec-radix-czr78           Pulling image "anakli/cca:splash2x_radix"
+49m         Normal    SuccessfulCreate       job/parsec-radix                 Created pod: parsec-radix-czr78
+49m         Normal    Started                pod/parsec-radix-czr78           Started container parsec-radix
+49m         Normal    Created                pod/parsec-radix-czr78           Created container parsec-radix
+49m         Normal    Pulled                 pod/parsec-radix-czr78           Successfully pulled image "anakli/cca:splash2x_radix" in 1.618s (1.618s including waiting). Image size: 34384214 bytes.
+49m         Normal    Pulling                pod/parsec-vips-rsclc            Pulling image "anakli/cca:parsec_vips"
+49m         Normal    Scheduled              pod/parsec-vips-rsclc            Successfully assigned default/parsec-vips-rsclc to node-a-8core-t4w3
+49m         Normal    SuccessfulCreate       job/parsec-vips                  Created pod: parsec-vips-rsclc
+49m         Normal    Completed              job/parsec-radix                 Job completed
+48m         Normal    Pulled                 pod/parsec-vips-rsclc            Successfully pulled image "anakli/cca:parsec_vips" in 26.934s (26.934s including waiting). Image size: 909672474 bytes.
+48m         Normal    Created                pod/parsec-vips-rsclc            Created container parsec-vips
+48m         Normal    Started                pod/parsec-vips-rsclc            Started container parsec-vips
+48m         Normal    Completed              job/parsec-canneal               Job completed
+48m         Normal    Completed              job/parsec-vips                  Job completed
+23m         Normal    Killing                pod/some-memcached               Stopping container memcached
+23m         Normal    DeletingLoadBalancer   service/some-memcached-11211     Deleting load balancer
+22m         Normal    DeletedLoadBalancer    service/some-memcached-11211     Deleted load balancer
+22m         Normal    Started                pod/some-memcached               Started container memcached
+22m         Normal    Created                pod/some-memcached               Created container memcached
+22m         Normal    Pulled                 pod/some-memcached               Container image "memcached:1.6.38" already present on machine
+22m         Normal    Scheduled              pod/some-memcached               Successfully assigned default/some-memcached to node-b-4core-rkqx
+22m         Normal    EnsuringLoadBalancer   service/some-memcached-11211     Ensuring load balancer
+21m         Normal    EnsuredLoadBalancer    service/some-memcached-11211     Ensured load balancer
+20m         Normal    SuccessfulCreate       job/parsec-blackscholes          Created pod: parsec-blackscholes-pc5kc
+20m         Normal    Scheduled              pod/parsec-freqmine-9mrwr        Successfully assigned default/parsec-freqmine-9mrwr to node-a-8core-t4w3
+20m         Normal    Pulling                pod/parsec-freqmine-9mrwr        Pulling image "anakli/cca:parsec_freqmine"
+20m         Normal    Scheduled              pod/parsec-blackscholes-pc5kc    Successfully assigned default/parsec-blackscholes-pc5kc to node-b-4core-rkqx
+20m         Normal    Pulling                pod/parsec-blackscholes-pc5kc    Pulling image "anakli/cca:parsec_blackscholes"
+20m         Normal    SuccessfulCreate       job/parsec-freqmine              Created pod: parsec-freqmine-9mrwr
+20m         Normal    Pulled                 pod/parsec-blackscholes-pc5kc    Successfully pulled image "anakli/cca:parsec_blackscholes" in 568ms (568ms including waiting). Image size: 153652038 bytes.
+20m         Normal    Created                pod/parsec-blackscholes-pc5kc    Created container parsec-blackscholes
+20m         Normal    Created                pod/parsec-freqmine-9mrwr        Created container parsec-freqmine
+20m         Normal    Pulled                 pod/parsec-freqmine-9mrwr        Successfully pulled image "anakli/cca:parsec_freqmine" in 581ms (581ms including waiting). Image size: 159516230 bytes.
+20m         Normal    Started                pod/parsec-freqmine-9mrwr        Started container parsec-freqmine
+20m         Normal    Started                pod/parsec-blackscholes-pc5kc    Started container parsec-blackscholes
+20m         Normal    SuccessfulCreate       job/parsec-barnes                Created pod: parsec-barnes-4h4vl
+20m         Normal    Scheduled              pod/parsec-barnes-4h4vl          Successfully assigned default/parsec-barnes-4h4vl to node-a-8core-t4w3
+20m         Normal    Pulling                pod/parsec-barnes-4h4vl          Pulling image "anakli/cca:splash2x_barnes"
+20m         Normal    Started                pod/parsec-barnes-4h4vl          Started container parsec-barnes
+20m         Normal    Pulled                 pod/parsec-barnes-4h4vl          Successfully pulled image "anakli/cca:splash2x_barnes" in 543ms (543ms including waiting). Image size: 34527819 bytes.
+20m         Normal    Created                pod/parsec-barnes-4h4vl          Created container parsec-barnes
+20m         Normal    SuccessfulCreate       job/parsec-radix                 Created pod: parsec-radix-sgtbg
+20m         Normal    Completed              job/parsec-barnes                Job completed
+20m         Normal    Scheduled              pod/parsec-radix-sgtbg           Successfully assigned default/parsec-radix-sgtbg to node-a-8core-t4w3
+20m         Normal    Pulled                 pod/parsec-radix-sgtbg           Successfully pulled image "anakli/cca:splash2x_radix" in 571ms (571ms including waiting). Image size: 34384214 bytes.
+20m         Normal    Pulling                pod/parsec-radix-sgtbg           Pulling image "anakli/cca:splash2x_radix"
+20m         Normal    Created                pod/parsec-radix-sgtbg           Created container parsec-radix
+20m         Normal    Started                pod/parsec-radix-sgtbg           Started container parsec-radix
+19m         Normal    SuccessfulCreate       job/parsec-vips                  Created pod: parsec-vips-vjvdh
+19m         Normal    Scheduled              pod/parsec-vips-vjvdh            Successfully assigned default/parsec-vips-vjvdh to node-a-8core-t4w3
+19m         Normal    Completed              job/parsec-radix                 Job completed
+19m         Normal    Created                pod/parsec-vips-vjvdh            Created container parsec-vips
+19m         Normal    Pulled                 pod/parsec-vips-vjvdh            Successfully pulled image "anakli/cca:parsec_vips" in 568ms (568ms including waiting). Image size: 909672474 bytes.
+19m         Normal    Pulling                pod/parsec-vips-vjvdh            Pulling image "anakli/cca:parsec_vips"
+19m         Normal    Started                pod/parsec-vips-vjvdh            Started container parsec-vips
+19m         Normal    Completed              job/parsec-blackscholes          Job completed
+19m         Normal    SuccessfulCreate       job/parsec-canneal               Created pod: parsec-canneal-2pd6t
+19m         Normal    Pulling                pod/parsec-canneal-2pd6t         Pulling image "anakli/cca:parsec_canneal"
+19m         Normal    Scheduled              pod/parsec-canneal-2pd6t         Successfully assigned default/parsec-canneal-2pd6t to node-b-4core-rkqx
+19m         Normal    Pulled                 pod/parsec-canneal-2pd6t         Successfully pulled image "anakli/cca:parsec_canneal" in 3.328s (3.328s including waiting). Image size: 99173306 bytes.
+19m         Normal    Started                pod/parsec-canneal-2pd6t         Started container parsec-canneal
+19m         Normal    Created                pod/parsec-canneal-2pd6t         Created container parsec-canneal
+18m         Normal    Completed              job/parsec-vips                  Job completed
+18m         Normal    Completed              job/parsec-freqmine              Job completed
+15m         Normal    SuccessfulCreate       job/parsec-streamcluster         Created pod: parsec-streamcluster-7q8ct
+15m         Normal    Completed              job/parsec-canneal               Job completed
+15m         Normal    Scheduled              pod/parsec-streamcluster-7q8ct   Successfully assigned default/parsec-streamcluster-7q8ct to node-b-4core-rkqx
+15m         Normal    Pulling                pod/parsec-streamcluster-7q8ct   Pulling image "anakli/cca:parsec_streamcluster"
+15m         Normal    Pulled                 pod/parsec-streamcluster-7q8ct   Successfully pulled image "anakli/cca:parsec_streamcluster" in 1.561s (1.561s including waiting). Image size: 34585790 bytes.
+15m         Normal    Started                pod/parsec-streamcluster-7q8ct   Started container parsec-streamcluster
+15m         Normal    Created                pod/parsec-streamcluster-7q8ct   Created container parsec-streamcluster
+11m         Normal    Killing                pod/parsec-streamcluster-7q8ct   Stopping container parsec-streamcluster
+11m         Normal    Killing                pod/some-memcached               Stopping container memcached
+11m         Normal    DeletingLoadBalancer   service/some-memcached-11211     Deleting load balancer
+10m         Normal    DeletedLoadBalancer    service/some-memcached-11211     Deleted load balancer
+5m19s       Normal    Scheduled              pod/some-memcached               Successfully assigned default/some-memcached to node-b-4core-rkqx
+5m18s       Normal    Pulled                 pod/some-memcached               Container image "memcached:1.6.38" already present on machine
+5m18s       Normal    Created                pod/some-memcached               Created container memcached
+5m18s       Normal    Started                pod/some-memcached               Started container memcached
+5m17s       Normal    EnsuringLoadBalancer   service/some-memcached-11211     Ensuring load balancer
+4m26s       Normal    EnsuredLoadBalancer    service/some-memcached-11211     Ensured load balancer
+4m4s        Normal    Pulling                pod/parsec-blackscholes-v5cj2    Pulling image "anakli/cca:parsec_blackscholes"
+4m4s        Normal    SuccessfulCreate       job/parsec-freqmine              Created pod: parsec-freqmine-l29mg
+4m4s        Normal    SuccessfulCreate       job/parsec-blackscholes          Created pod: parsec-blackscholes-v5cj2
+4m4s        Normal    Scheduled              pod/parsec-blackscholes-v5cj2    Successfully assigned default/parsec-blackscholes-v5cj2 to node-b-4core-rkqx
+4m4s        Normal    Scheduled              pod/parsec-freqmine-l29mg        Successfully assigned default/parsec-freqmine-l29mg to node-a-8core-t4w3
+4m3s        Normal    Created                pod/parsec-freqmine-l29mg        Created container parsec-freqmine
+4m3s        Normal    Created                pod/parsec-blackscholes-v5cj2    Created container parsec-blackscholes
+4m3s        Normal    Started                pod/parsec-freqmine-l29mg        Started container parsec-freqmine
+4m3s        Normal    Pulled                 pod/parsec-blackscholes-v5cj2    Successfully pulled image "anakli/cca:parsec_blackscholes" in 555ms (555ms including waiting). Image size: 153652038 bytes.
+4m3s        Normal    Pulled                 pod/parsec-freqmine-l29mg        Successfully pulled image "anakli/cca:parsec_freqmine" in 572ms (572ms including waiting). Image size: 159516230 bytes.
+4m3s        Normal    Pulling                pod/parsec-freqmine-l29mg        Pulling image "anakli/cca:parsec_freqmine"
+4m3s        Normal    Started                pod/parsec-blackscholes-v5cj2    Started container parsec-blackscholes
+4m2s        Normal    SuccessfulCreate       job/parsec-streamcluster         Created pod: parsec-streamcluster-9tdsf
+4m2s        Normal    Scheduled              pod/parsec-streamcluster-9tdsf   Successfully assigned default/parsec-streamcluster-9tdsf to node-a-8core-t4w3
+4m1s        Normal    Created                pod/parsec-streamcluster-9tdsf   Created container parsec-streamcluster
+4m1s        Normal    Started                pod/parsec-streamcluster-9tdsf   Started container parsec-streamcluster
+4m1s        Normal    Pulled                 pod/parsec-streamcluster-9tdsf   Successfully pulled image "anakli/cca:parsec_streamcluster" in 558ms (558ms including waiting). Image size: 34585790 bytes.
+4m1s        Normal    Pulling                pod/parsec-streamcluster-9tdsf   Pulling image "anakli/cca:parsec_streamcluster"
+2m24s       Normal    SuccessfulCreate       job/parsec-canneal               Created pod: parsec-canneal-cv72f
+2m24s       Normal    Pulling                pod/parsec-canneal-cv72f         Pulling image "anakli/cca:parsec_canneal"
+2m24s       Normal    Scheduled              pod/parsec-canneal-cv72f         Successfully assigned default/parsec-canneal-cv72f to node-b-4core-rkqx
+2m24s       Normal    Completed              job/parsec-blackscholes          Job completed
+2m23s       Normal    Created                pod/parsec-canneal-cv72f         Created container parsec-canneal
+2m23s       Normal    Started                pod/parsec-canneal-cv72f         Started container parsec-canneal
+2m23s       Normal    Pulled                 pod/parsec-canneal-cv72f         Successfully pulled image "anakli/cca:parsec_canneal" in 563ms (563ms including waiting). Image size: 99173306 bytes.
+119s        Normal    Completed              job/parsec-freqmine              Job completed
+119s        Normal    Scheduled              pod/parsec-barnes-vd658          Successfully assigned default/parsec-barnes-vd658 to node-a-8core-t4w3
+119s        Normal    Pulling                pod/parsec-barnes-vd658          Pulling image "anakli/cca:splash2x_barnes"
+119s        Normal    SuccessfulCreate       job/parsec-barnes                Created pod: parsec-barnes-vd658
+118s        Normal    Created                pod/parsec-barnes-vd658          Created container parsec-barnes
+118s        Normal    Started                pod/parsec-barnes-vd658          Started container parsec-barnes
+118s        Normal    Pulled                 pod/parsec-barnes-vd658          Successfully pulled image "anakli/cca:splash2x_barnes" in 556ms (556ms including waiting). Image size: 34527819 bytes.
+64s         Normal    Scheduled              pod/parsec-radix-rh9mt           Successfully assigned default/parsec-radix-rh9mt to node-a-8core-t4w3
+64s         Normal    Completed              job/parsec-barnes                Job completed
+64s         Normal    SuccessfulCreate       job/parsec-radix                 Created pod: parsec-radix-rh9mt
+63s         Normal    Created                pod/parsec-radix-rh9mt           Created container parsec-radix
+63s         Normal    Pulled                 pod/parsec-radix-rh9mt           Successfully pulled image "anakli/cca:splash2x_radix" in 570ms (570ms including waiting). Image size: 34384214 bytes.
+63s         Normal    Pulling                pod/parsec-radix-rh9mt           Pulling image "anakli/cca:splash2x_radix"
+63s         Normal    Started                pod/parsec-radix-rh9mt           Started container parsec-radix
+49s         Normal    Completed              job/parsec-streamcluster         Job completed
+49s         Normal    SuccessfulCreate       job/parsec-vips                  Created pod: parsec-vips-kcgsd
+49s         Normal    Scheduled              pod/parsec-vips-kcgsd            Successfully assigned default/parsec-vips-kcgsd to node-a-8core-t4w3
+48s         Normal    Completed              job/parsec-radix                 Job completed
+48s         Normal    Started                pod/parsec-vips-kcgsd            Started container parsec-vips
+48s         Normal    Created                pod/parsec-vips-kcgsd            Created container parsec-vips
+48s         Normal    Pulling                pod/parsec-vips-kcgsd            Pulling image "anakli/cca:parsec_vips"
+48s         Normal    Pulled                 pod/parsec-vips-kcgsd            Successfully pulled image "anakli/cca:parsec_vips" in 566ms (566ms including waiting). Image size: 909672474 bytes.
+15s         Normal    Completed              job/parsec-vips                  Job completed
+1s          Normal    Completed              job/parsec-canneal               Job completed

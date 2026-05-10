@@ -1,0 +1,8 @@
+NAME                   STATUS     COMPLETIONS   DURATION   AGE     CONTAINERS             IMAGES                            SELECTOR
+parsec-barnes          Complete   1/1           55s        118s    parsec-barnes          anakli/cca:splash2x_barnes        batch.kubernetes.io/controller-uid=ac9239d6-2722-4fc6-a757-6cff49f84297
+parsec-blackscholes    Complete   1/1           100s       4m3s    parsec-blackscholes    anakli/cca:parsec_blackscholes    batch.kubernetes.io/controller-uid=f7aa9d64-0a1a-4cd0-9765-546dfc8bd418
+parsec-canneal         Complete   1/1           2m23s      2m23s   parsec-canneal         anakli/cca:parsec_canneal         batch.kubernetes.io/controller-uid=28c3c1e4-89c6-4233-9501-64bdc2dd6707
+parsec-freqmine        Complete   1/1           2m5s       4m3s    parsec-freqmine        anakli/cca:parsec_freqmine        batch.kubernetes.io/controller-uid=3980ce66-291f-4b02-a027-84ae961118a9
+parsec-radix           Complete   1/1           16s        63s     parsec-radix           anakli/cca:splash2x_radix         batch.kubernetes.io/controller-uid=6bdeab00-b3dc-4031-8ed4-a6fd43cced1f
+parsec-streamcluster   Complete   1/1           3m13s      4m1s    parsec-streamcluster   anakli/cca:parsec_streamcluster   batch.kubernetes.io/controller-uid=fb7c17f4-82d0-4613-8070-2eceb47f5a62
+parsec-vips            Complete   1/1           34s        48s     parsec-vips            anakli/cca:parsec_vips            batch.kubernetes.io/controller-uid=1801f8ca-776d-4f4f-bfea-7d38c61b3df8

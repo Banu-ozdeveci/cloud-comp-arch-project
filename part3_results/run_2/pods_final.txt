@@ -1,0 +1,9 @@
+NAME                         READY   STATUS      RESTARTS   AGE     IP            NODE                NOMINATED NODE   READINESS GATES
+parsec-barnes-sbr2z          0/1     Completed   0          2m1s    100.96.3.24   node-a-8core-t4w3   <none>           <none>
+parsec-blackscholes-lkxdd    0/1     Completed   0          4m5s    100.96.2.27   node-b-4core-rkqx   <none>           <none>
+parsec-canneal-lp4hl         0/1     Completed   0          2m24s   100.96.2.28   node-b-4core-rkqx   <none>           <none>
+parsec-freqmine-dw4q7        0/1     Completed   0          4m5s    100.96.3.22   node-a-8core-t4w3   <none>           <none>
+parsec-radix-w5tvv           0/1     Completed   0          60s     100.96.3.25   node-a-8core-t4w3   <none>           <none>
+parsec-streamcluster-qngnv   0/1     Completed   0          4m2s    100.96.3.23   node-a-8core-t4w3   <none>           <none>
+parsec-vips-z6gjr            0/1     Completed   0          51s     100.96.3.26   node-a-8core-t4w3   <none>           <none>
+some-memcached               1/1     Running     0          5m36s   100.96.2.26   node-b-4core-rkqx   <none>           <none>

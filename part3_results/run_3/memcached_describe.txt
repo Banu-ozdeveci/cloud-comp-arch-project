@@ -1,0 +1,58 @@
+Name:             some-memcached
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             node-b-4core-rkqx/10.0.16.10
+Start Time:       Sun, 10 May 2026 04:53:48 +0200
+Labels:           app=some-memcached
+Annotations:      kubernetes.io/limit-ranger: LimitRanger plugin set: cpu request for container memcached
+Status:           Running
+IP:               100.96.2.29
+IPs:
+  IP:  100.96.2.29
+Containers:
+  memcached:
+    Container ID:  containerd://9a264967fdb38a87df03ef7ebd91cde29ce6e8fb915afd2028a82ef2106853fd
+    Image:         memcached:1.6.38
+    Image ID:      docker.io/library/memcached@sha256:768b8b14b264b87cdde0d4bc0e800c332b8563ce19fd15ce98945c4441b98146
+    Port:          11211/TCP (memcache)
+    Host Port:     0/TCP (memcache)
+    Command:
+      /bin/sh
+    Args:
+      -c
+      taskset -c 0-1 memcached -m 1024 -t 2 -u memcache -l 0.0.0.0 -p 11211
+    State:          Running
+      Started:      Sun, 10 May 2026 04:53:48 +0200
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:        100m
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-fzdr2 (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-fzdr2:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              cca-project-nodetype=node-b-4core
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  31s   default-scheduler  Successfully assigned default/some-memcached to node-b-4core-rkqx
+  Normal  Pulled     31s   kubelet            spec.containers{memcached}: Container image "memcached:1.6.38" already present on machine
+  Normal  Created    31s   kubelet            spec.containers{memcached}: Created container memcached
+  Normal  Started    31s   kubelet            spec.containers{memcached}: Started container memcached

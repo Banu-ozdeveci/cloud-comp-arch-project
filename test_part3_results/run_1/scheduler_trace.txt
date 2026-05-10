@@ -1,0 +1,59 @@
+=== Scheduler started ===
+Sun May 10 03:37:11 CEST 2026
+[node-b] starting blackscholes only
+NAME                        READY   STATUS              RESTARTS   AGE     IP            NODE                NOMINATED NODE   READINESS GATES
+parsec-blackscholes-jc67w   0/1     ContainerCreating   0          2s      <none>        node-b-4core-rkqx   <none>           <none>
+parsec-freqmine-dnpjx       1/1     Running             0          2s      100.96.3.7    node-a-8core-t4w3   <none>           <none>
+some-memcached              1/1     Running             0          2m45s   100.96.2.17   node-b-4core-rkqx   <none>           <none>
+NAME                        READY   STATUS              RESTARTS   AGE     IP            NODE                NOMINATED NODE   READINESS GATES
+parsec-blackscholes-jc67w   0/1     ContainerCreating   0          2s      <none>        node-b-4core-rkqx   <none>           <none>
+parsec-freqmine-dnpjx       1/1     Running             0          2s      100.96.3.7    node-a-8core-t4w3   <none>           <none>
+some-memcached              1/1     Running             0          2m45s   100.96.2.17   node-b-4core-rkqx   <none>           <none>
+NAME                         READY   STATUS              RESTARTS   AGE     IP            NODE                NOMINATED NODE   READINESS GATES
+parsec-blackscholes-jc67w    0/1     ContainerCreating   0          5s      <none>        node-b-4core-rkqx   <none>           <none>
+parsec-freqmine-dnpjx        1/1     Running             0          5s      100.96.3.7    node-a-8core-t4w3   <none>           <none>
+parsec-streamcluster-4qxd8   1/1     Running             0          2s      100.96.3.8    node-a-8core-t4w3   <none>           <none>
+some-memcached               1/1     Running             0          2m48s   100.96.2.17   node-b-4core-rkqx   <none>           <none>
+[slot-b] waiting for parsec-streamcluster
+[slot-a] waiting for parsec-freqmine
+[node-b] completed blackscholes
+[slot-a] launching parsec-canneal
+NAME                         READY   STATUS      RESTARTS   AGE     IP            NODE                NOMINATED NODE   READINESS GATES
+parsec-blackscholes-jc67w    0/1     Completed   0          2m4s    100.96.2.18   node-b-4core-rkqx   <none>           <none>
+parsec-canneal-8cs6j         1/1     Running     0          2s      100.96.3.9    node-a-8core-t4w3   <none>           <none>
+parsec-freqmine-dnpjx        0/1     Completed   0          2m4s    100.96.3.7    node-a-8core-t4w3   <none>           <none>
+parsec-streamcluster-4qxd8   1/1     Running     0          2m1s    100.96.3.8    node-a-8core-t4w3   <none>           <none>
+some-memcached               1/1     Running     0          4m47s   100.96.2.17   node-b-4core-rkqx   <none>           <none>
+[slot-a] waiting for parsec-canneal
+[slot-b] launching parsec-barnes
+NAME                         READY   STATUS      RESTARTS   AGE     IP            NODE                NOMINATED NODE   READINESS GATES
+parsec-barnes-6tsjz          1/1     Running     0          2s      100.96.3.10   node-a-8core-t4w3   <none>           <none>
+parsec-blackscholes-jc67w    0/1     Completed   0          2m29s   100.96.2.18   node-b-4core-rkqx   <none>           <none>
+parsec-canneal-8cs6j         1/1     Running     0          27s     100.96.3.9    node-a-8core-t4w3   <none>           <none>
+parsec-freqmine-dnpjx        0/1     Completed   0          2m29s   100.96.3.7    node-a-8core-t4w3   <none>           <none>
+parsec-streamcluster-4qxd8   0/1     Completed   0          2m26s   100.96.3.8    node-a-8core-t4w3   <none>           <none>
+some-memcached               1/1     Running     0          5m12s   100.96.2.17   node-b-4core-rkqx   <none>           <none>
+[slot-b] waiting for parsec-barnes
+[slot-b] launching parsec-radix
+NAME                         READY   STATUS              RESTARTS   AGE     IP            NODE                NOMINATED NODE   READINESS GATES
+parsec-barnes-6tsjz          0/1     Completed           0          46s     100.96.3.10   node-a-8core-t4w3   <none>           <none>
+parsec-blackscholes-jc67w    0/1     Completed           0          3m13s   100.96.2.18   node-b-4core-rkqx   <none>           <none>
+parsec-canneal-8cs6j         1/1     Running             0          71s     100.96.3.9    node-a-8core-t4w3   <none>           <none>
+parsec-freqmine-dnpjx        0/1     Completed           0          3m13s   100.96.3.7    node-a-8core-t4w3   <none>           <none>
+parsec-radix-czr78           0/1     ContainerCreating   0          2s      <none>        node-a-8core-t4w3   <none>           <none>
+parsec-streamcluster-4qxd8   0/1     Completed           0          3m10s   100.96.3.8    node-a-8core-t4w3   <none>           <none>
+some-memcached               1/1     Running             0          5m56s   100.96.2.17   node-b-4core-rkqx   <none>           <none>
+[slot-b] waiting for parsec-radix
+[slot-b] launching parsec-vips
+NAME                         READY   STATUS              RESTARTS   AGE     IP            NODE                NOMINATED NODE   READINESS GATES
+parsec-barnes-6tsjz          0/1     Completed           0          66s     100.96.3.10   node-a-8core-t4w3   <none>           <none>
+parsec-blackscholes-jc67w    0/1     Completed           0          3m33s   100.96.2.18   node-b-4core-rkqx   <none>           <none>
+parsec-canneal-8cs6j         1/1     Running             0          91s     100.96.3.9    node-a-8core-t4w3   <none>           <none>
+parsec-freqmine-dnpjx        0/1     Completed           0          3m33s   100.96.3.7    node-a-8core-t4w3   <none>           <none>
+parsec-radix-czr78           0/1     Completed           0          22s     100.96.3.11   node-a-8core-t4w3   <none>           <none>
+parsec-streamcluster-4qxd8   0/1     Completed           0          3m30s   100.96.3.8    node-a-8core-t4w3   <none>           <none>
+parsec-vips-rsclc            0/1     ContainerCreating   0          2s      <none>        node-a-8core-t4w3   <none>           <none>
+some-memcached               1/1     Running             0          6m16s   100.96.2.17   node-b-4core-rkqx   <none>           <none>
+[slot-b] waiting for parsec-vips
+[slot-b] no more jobs
+[slot-a] no more jobs

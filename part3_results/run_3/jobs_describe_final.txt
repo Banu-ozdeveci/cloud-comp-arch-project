@@ -1,0 +1,285 @@
+Name:             parsec-barnes
+Namespace:        default
+Selector:         batch.kubernetes.io/controller-uid=d0dff33a-b655-4cd8-bf8f-ea178514d2c1
+Labels:           name=parsec-barnes
+Annotations:      <none>
+Parallelism:      1
+Completions:      1
+Completion Mode:  NonIndexed
+Suspend:          false
+Backoff Limit:    6
+Start Time:       Sun, 10 May 2026 04:57:06 +0200
+Completed At:     Sun, 10 May 2026 04:58:02 +0200
+Duration:         56s
+Pods Statuses:    0 Active (0 Ready) / 1 Succeeded / 0 Failed
+Pod Template:
+  Labels:  batch.kubernetes.io/controller-uid=d0dff33a-b655-4cd8-bf8f-ea178514d2c1
+           batch.kubernetes.io/job-name=parsec-barnes
+           controller-uid=d0dff33a-b655-4cd8-bf8f-ea178514d2c1
+           job-name=parsec-barnes
+  Containers:
+   parsec-barnes:
+    Image:      anakli/cca:splash2x_barnes
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      /bin/sh
+    Args:
+      -c
+      taskset -c 4-7 ./run -a run -S splash2x -p barnes -i native -n 4
+    Environment:   <none>
+    Mounts:        <none>
+  Volumes:         <none>
+  Node-Selectors:  cca-project-nodetype=node-a-8core
+  Tolerations:     <none>
+Events:
+  Type    Reason            Age   From            Message
+  ----    ------            ----  ----            -------
+  Normal  SuccessfulCreate  2m1s  job-controller  Created pod: parsec-barnes-vs9dv
+  Normal  Completed         65s   job-controller  Job completed
+
+
+Name:             parsec-blackscholes
+Namespace:        default
+Selector:         batch.kubernetes.io/controller-uid=ad0a9bc5-27e4-4d57-95a3-89618f5ceeec
+Labels:           name=parsec-blackscholes
+Annotations:      <none>
+Parallelism:      1
+Completions:      1
+Completion Mode:  NonIndexed
+Suspend:          false
+Backoff Limit:    6
+Start Time:       Sun, 10 May 2026 04:55:00 +0200
+Completed At:     Sun, 10 May 2026 04:56:40 +0200
+Duration:         100s
+Pods Statuses:    0 Active (0 Ready) / 1 Succeeded / 0 Failed
+Pod Template:
+  Labels:  batch.kubernetes.io/controller-uid=ad0a9bc5-27e4-4d57-95a3-89618f5ceeec
+           batch.kubernetes.io/job-name=parsec-blackscholes
+           controller-uid=ad0a9bc5-27e4-4d57-95a3-89618f5ceeec
+           job-name=parsec-blackscholes
+  Containers:
+   parsec-blackscholes:
+    Image:      anakli/cca:parsec_blackscholes
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      /bin/sh
+    Args:
+      -c
+      taskset -c 3 ./run -a run -S parsec -p blackscholes -i native -n 1
+    Environment:   <none>
+    Mounts:        <none>
+  Volumes:         <none>
+  Node-Selectors:  cca-project-nodetype=node-b-4core
+  Tolerations:     <none>
+Events:
+  Type    Reason            Age    From            Message
+  ----    ------            ----   ----            -------
+  Normal  SuccessfulCreate  4m7s   job-controller  Created pod: parsec-blackscholes-mlg4n
+  Normal  Completed         2m27s  job-controller  Job completed
+
+
+Name:             parsec-canneal
+Namespace:        default
+Selector:         batch.kubernetes.io/controller-uid=2d30cfda-8817-4573-9ba6-72039cd66ced
+Labels:           name=parsec-canneal
+Annotations:      <none>
+Parallelism:      1
+Completions:      1
+Completion Mode:  NonIndexed
+Suspend:          false
+Backoff Limit:    6
+Start Time:       Sun, 10 May 2026 04:56:40 +0200
+Completed At:     Sun, 10 May 2026 04:59:06 +0200
+Duration:         2m26s
+Pods Statuses:    0 Active (0 Ready) / 1 Succeeded / 0 Failed
+Pod Template:
+  Labels:  batch.kubernetes.io/controller-uid=2d30cfda-8817-4573-9ba6-72039cd66ced
+           batch.kubernetes.io/job-name=parsec-canneal
+           controller-uid=2d30cfda-8817-4573-9ba6-72039cd66ced
+           job-name=parsec-canneal
+  Containers:
+   parsec-canneal:
+    Image:      anakli/cca:parsec_canneal
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      /bin/sh
+    Args:
+      -c
+      taskset -c 2-3 ./run -a run -S parsec -p canneal -i native -n 2
+    Environment:   <none>
+    Mounts:        <none>
+  Volumes:         <none>
+  Node-Selectors:  cca-project-nodetype=node-b-4core
+  Tolerations:     <none>
+Events:
+  Type    Reason            Age    From            Message
+  ----    ------            ----   ----            -------
+  Normal  SuccessfulCreate  2m27s  job-controller  Created pod: parsec-canneal-tz4fr
+  Normal  Completed         1s     job-controller  Job completed
+
+
+Name:             parsec-freqmine
+Namespace:        default
+Selector:         batch.kubernetes.io/controller-uid=0bd3f708-9942-4f73-839b-5c7f80882b6e
+Labels:           name=parsec-freqmine
+Annotations:      <none>
+Parallelism:      1
+Completions:      1
+Completion Mode:  NonIndexed
+Suspend:          false
+Backoff Limit:    6
+Start Time:       Sun, 10 May 2026 04:55:00 +0200
+Completed At:     Sun, 10 May 2026 04:57:05 +0200
+Duration:         2m5s
+Pods Statuses:    0 Active (0 Ready) / 1 Succeeded / 0 Failed
+Pod Template:
+  Labels:  batch.kubernetes.io/controller-uid=0bd3f708-9942-4f73-839b-5c7f80882b6e
+           batch.kubernetes.io/job-name=parsec-freqmine
+           controller-uid=0bd3f708-9942-4f73-839b-5c7f80882b6e
+           job-name=parsec-freqmine
+  Containers:
+   parsec-freqmine:
+    Image:      anakli/cca:parsec_freqmine
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      /bin/sh
+    Args:
+      -c
+      taskset -c 0-3 ./run -a run -S parsec -p freqmine -i native -n 4
+    Environment:   <none>
+    Mounts:        <none>
+  Volumes:         <none>
+  Node-Selectors:  cca-project-nodetype=node-a-8core
+  Tolerations:     <none>
+Events:
+  Type    Reason            Age   From            Message
+  ----    ------            ----  ----            -------
+  Normal  SuccessfulCreate  4m7s  job-controller  Created pod: parsec-freqmine-mnn42
+  Normal  Completed         2m2s  job-controller  Job completed
+
+
+Name:             parsec-radix
+Namespace:        default
+Selector:         batch.kubernetes.io/controller-uid=8733dc09-eb77-4e72-abc7-0baff9266841
+Labels:           name=parsec-radix
+Annotations:      <none>
+Parallelism:      1
+Completions:      1
+Completion Mode:  NonIndexed
+Suspend:          false
+Backoff Limit:    6
+Start Time:       Sun, 10 May 2026 04:58:02 +0200
+Completed At:     Sun, 10 May 2026 04:58:21 +0200
+Duration:         19s
+Pods Statuses:    0 Active (0 Ready) / 1 Succeeded / 0 Failed
+Pod Template:
+  Labels:  batch.kubernetes.io/controller-uid=8733dc09-eb77-4e72-abc7-0baff9266841
+           batch.kubernetes.io/job-name=parsec-radix
+           controller-uid=8733dc09-eb77-4e72-abc7-0baff9266841
+           job-name=parsec-radix
+  Containers:
+   parsec-radix:
+    Image:      anakli/cca:splash2x_radix
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      /bin/sh
+    Args:
+      -c
+      taskset -c 0-3 ./run -a run -S splash2x -p radix -i native -n 4
+    Environment:   <none>
+    Mounts:        <none>
+  Volumes:         <none>
+  Node-Selectors:  cca-project-nodetype=node-a-8core
+  Tolerations:     <none>
+Events:
+  Type    Reason            Age   From            Message
+  ----    ------            ----  ----            -------
+  Normal  SuccessfulCreate  65s   job-controller  Created pod: parsec-radix-7vdbb
+  Normal  Completed         46s   job-controller  Job completed
+
+
+Name:             parsec-streamcluster
+Namespace:        default
+Selector:         batch.kubernetes.io/controller-uid=3c38edf9-2244-470e-94f3-0a9ef36ac8e9
+Labels:           name=parsec-streamcluster
+Annotations:      <none>
+Parallelism:      1
+Completions:      1
+Completion Mode:  NonIndexed
+Suspend:          false
+Backoff Limit:    6
+Start Time:       Sun, 10 May 2026 04:55:03 +0200
+Completed At:     Sun, 10 May 2026 04:58:15 +0200
+Duration:         3m12s
+Pods Statuses:    0 Active (0 Ready) / 1 Succeeded / 0 Failed
+Pod Template:
+  Labels:  batch.kubernetes.io/controller-uid=3c38edf9-2244-470e-94f3-0a9ef36ac8e9
+           batch.kubernetes.io/job-name=parsec-streamcluster
+           controller-uid=3c38edf9-2244-470e-94f3-0a9ef36ac8e9
+           job-name=parsec-streamcluster
+  Containers:
+   parsec-streamcluster:
+    Image:      anakli/cca:parsec_streamcluster
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      /bin/sh
+    Args:
+      -c
+      taskset -c 4-7 ./run -a run -S parsec -p streamcluster -i native -n 4
+    Environment:   <none>
+    Mounts:        <none>
+  Volumes:         <none>
+  Node-Selectors:  cca-project-nodetype=node-a-8core
+  Tolerations:     <none>
+Events:
+  Type    Reason            Age   From            Message
+  ----    ------            ----  ----            -------
+  Normal  SuccessfulCreate  4m4s  job-controller  Created pod: parsec-streamcluster-775zk
+  Normal  Completed         52s   job-controller  Job completed
+
+
+Name:             parsec-vips
+Namespace:        default
+Selector:         batch.kubernetes.io/controller-uid=b1ef5eb3-5163-49d3-a3ae-f661be12f6ce
+Labels:           name=parsec-vips
+Annotations:      <none>
+Parallelism:      1
+Completions:      1
+Completion Mode:  NonIndexed
+Suspend:          false
+Backoff Limit:    6
+Start Time:       Sun, 10 May 2026 04:58:15 +0200
+Completed At:     Sun, 10 May 2026 04:58:55 +0200
+Duration:         40s
+Pods Statuses:    0 Active (0 Ready) / 1 Succeeded / 0 Failed
+Pod Template:
+  Labels:  batch.kubernetes.io/controller-uid=b1ef5eb3-5163-49d3-a3ae-f661be12f6ce
+           batch.kubernetes.io/job-name=parsec-vips
+           controller-uid=b1ef5eb3-5163-49d3-a3ae-f661be12f6ce
+           job-name=parsec-vips
+  Containers:
+   parsec-vips:
+    Image:      anakli/cca:parsec_vips
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      /bin/sh
+    Args:
+      -c
+      taskset -c 0-3 ./run -a run -S parsec -p vips -i native -n 4
+    Environment:   <none>
+    Mounts:        <none>
+  Volumes:         <none>
+  Node-Selectors:  cca-project-nodetype=node-a-8core
+  Tolerations:     <none>
+Events:
+  Type    Reason            Age   From            Message
+  ----    ------            ----  ----            -------
+  Normal  SuccessfulCreate  52s   job-controller  Created pod: parsec-vips-qtt4t
+  Normal  Completed         12s   job-controller  Job completed
